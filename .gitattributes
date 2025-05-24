@@ -1,5 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
@@ -8,3 +9,6 @@ vhcd
 =======
 ciao
 >>>>>>> dev
+=======
+<p>paragrafo</p>
+>>>>>>> Stashed changes
