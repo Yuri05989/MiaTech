@@ -1,6 +1,43 @@
+
+.skin{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: -12px 8px 20px 5px;
+    border-radius: 15px;
+}
+
+
+
+
 .immagine{
     width: 160px;
     height: 160px;
     margin: 0 auto;
+   box-shadow: -12px 8px 20px 5px;
+    border-radius: 15px;
+}
 
+
+.angel{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+  align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    align-content: end;
+    box-shadow: -12px 8px 20px 5px;
+    border-radius: 15px;
+}
+.mask{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto; 
+    box-shadow: -12px 8px 20px 5px;
+    border-radius: 15px;
+   
 }
