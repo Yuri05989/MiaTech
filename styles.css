@@ -25,7 +25,7 @@
 .angel{
     width: 160px;
     height: 160px;
-    margin: 0 auto;
+    margin: 72px auto;
   align-items: flex-end;
     display: flex;
     justify-content: flex-end;
@@ -40,4 +40,20 @@
     box-shadow: -12px 8px 20px 5px;
     border-radius: 15px;
    
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
