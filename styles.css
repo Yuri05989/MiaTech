@@ -57,3 +57,10 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+.hello{
+  border: 1px solid black;
+}
+.world{
+  border: 1px solid black;
+}
