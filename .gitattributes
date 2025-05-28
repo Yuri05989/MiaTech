@@ -1,14 +1,12 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-vhcd
->>>>>>> Stashed changes
-=======
-ciao
->>>>>>> dev
-=======
-<p>paragrafo</p>
->>>>>>> Stashed changes
+# Treat all JavaScript files as text
+*.js text
+
+# Treat all Markdown files as text
+*.md text
+
+# Treat all image files as binary
+*.png binary
+*.jpg binary
+*.gif binary
