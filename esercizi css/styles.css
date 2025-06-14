@@ -9,9 +9,7 @@ h1{
     text-align: right;
 }
 
-h2{
-    color: green;
-}
+
 
 h3{
     color: purple;
@@ -61,3 +59,16 @@ p{
   #marte{
     color: violet;
   }
+
+ .container{
+    color: red;
+ }
+
+ .venere{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ .mercurio{
+list-style: none;
+    display: flex;
+ }
