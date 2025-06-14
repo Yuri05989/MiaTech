@@ -48,7 +48,16 @@ ul li:nth-child(5) {
 }
 
 a:hover {color: red;}
- 
-  .giove{
+
+
+p{
+    color: black;
+}
+  .giove  {
     color: blue;
+  }
+
+  
+  #marte{
+    color: violet;
   }
