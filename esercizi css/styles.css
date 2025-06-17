@@ -14,7 +14,7 @@ h2{
 }
 
 h3{
-    color: purple;
+    color: #ff0000;
 }
 
 h4{
@@ -37,4 +37,8 @@ h6{
     font-size: 30px;
 }
 
-
+ul::five-line {
+ color: #ff0000;
+  font-variant: small-caps;
+    
+}
