@@ -16,6 +16,14 @@ padding: var(--padding);
 
 }
 
+.rem{
+    font-size: 7rem;
+}
+
+.em{
+    font-size: 7em;
+}
+
 :root{
     --padding:50px;
     --color: red;
