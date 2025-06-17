@@ -2,3 +2,8 @@ ul{
 display: flex;
 list-style: none;
 }
+
+div{
+background-color: aqua;
+border-radius: 39px;
+}
