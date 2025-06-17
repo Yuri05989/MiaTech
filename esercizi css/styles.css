@@ -17,8 +17,8 @@ padding: var(--padding);
 }
 
 .quadrato{
-width: 160px;
-height: 160px;
+width: 9%;
+height: 50%;
 background-color: blue;
 }
 
