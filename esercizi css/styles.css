@@ -8,4 +8,10 @@ background-color: aqua;
 border-radius: 39px;
 margin: 30px;
 padding: 30px;
+padding: var(--padding);
+
+}
+
+:root{
+    --padding:50px;
 }
