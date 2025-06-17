@@ -1,7 +1,4 @@
-p{
-background-color: aquamarine;
-border-radius: 6px;
-width: 524px;
-height: 168px;
+ul{
+display: flex;
+list-style: none;
 }
-
