@@ -6,9 +6,13 @@
     --color: red;
 }
 
-ul{
-display: flex;
+li{
+display: inline-block;
 list-style: none;
+}
+
+ul{
+  display: inline-block;
 }
 
 .triangolo{
