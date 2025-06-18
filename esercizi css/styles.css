@@ -64,3 +64,7 @@ position: absolute;
   bottom: 50px;
   right: 849px;
  }
+
+ span,h2{
+  color: green;
+ }
