@@ -6,13 +6,17 @@
     --color: red;
 }
 
-li{
-display: inline-block;
-list-style: none;
+.inline-block{
+    display: inline-block;
+   
 }
 
-ul{
-  display: inline-block;
+.inline{
+    display: inline;
+}
+
+.block{
+    display: block;
 }
 
 .triangolo{
