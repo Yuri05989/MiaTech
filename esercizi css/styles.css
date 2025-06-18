@@ -20,13 +20,13 @@
   display: block;
 }
 
-.triangolo {
-  background-color: aqua;
-  border-radius: 39px;
-  margin: 30px;
-  padding: 30px;
-  padding: var(--padding);
-
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
 }
 
 .quadrato {
@@ -52,9 +52,7 @@
   padding: 2px 16px;
 }
 
-.x {
-  display: flex;
-}
+
 
 .basso-destra {
   background-color: aqua;
@@ -66,9 +64,9 @@ img {
 
 .x {
   position: absolute;
-  top: 455px;
+  top: 136px;
   bottom: 50px;
-  right: 849px;
+  right: 859px;
 }
 
 span,
