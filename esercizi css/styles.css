@@ -15,4 +15,11 @@ p {
   padding: var(--padding);
   position: absolute;
   top: 200px;
+ 
+}
+.clear{
+position: absolute;
+    top: 370px;
+  clear: both;
+ 
 }
