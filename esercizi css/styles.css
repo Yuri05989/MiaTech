@@ -34,7 +34,7 @@
   background-color: blue;
   position: absolute;
   right: 10px;
-  top: 933px;
+  top: 702px;
 }
 
 
@@ -74,4 +74,12 @@ img {
 span,
 h2 {
   color: green;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
 }
