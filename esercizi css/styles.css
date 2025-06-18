@@ -1,70 +1,77 @@
-*{
-    color: var(--color);
-}
-:root{
-    --padding:50px;
-    --color: red;
+* {
+  color: var(--color);
 }
 
-.inline-block{
-    display: inline-block;
-   
+:root {
+  --padding: 50px;
+  --color: red;
 }
 
-.inline{
-    display: inline;
-}
-
-.block{
-    display: block;
-}
-
-.triangolo{
-background-color: aqua;
-border-radius: 39px;
-margin: 30px;
-padding: 30px;
-padding: var(--padding);
+.inline-block {
+  display: inline-block;
 
 }
 
-.quadrato{
-width: 9%;
-height: 50%;
-background-color: blue;
+.inline {
+  display: inline;
 }
+
+.block {
+  display: block;
+}
+
+.triangolo {
+  background-color: aqua;
+  border-radius: 39px;
+  margin: 30px;
+  padding: 30px;
+  padding: var(--padding);
+
+}
+
+.quadrato {
+  width: 9%;
+  background-color: blue;
+  position: absolute;
+  right: 10px;
+  top: 933px;
+}
+
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 40%;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container {
   padding: 2px 16px;
 }
-.x{
-    display: flex;
+
+.x {
+  display: flex;
 }
 
-.basso-destra{
-    background-color: aqua;
+.basso-destra {
+  background-color: aqua;
 }
- img{
+
+img {
   position: relative;
- }
+}
 
- .x{
-position: absolute;
+.x {
+  position: absolute;
   top: 455px;
   bottom: 50px;
   right: 849px;
- }
+}
 
- span,h2{
+span,
+h2 {
   color: green;
- }
+}
