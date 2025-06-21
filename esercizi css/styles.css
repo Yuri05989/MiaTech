@@ -15,6 +15,7 @@ p {
   padding: var(--padding);
   position: absolute;
   top: 200px;
+  display: none;
  
 }
 .clear{
