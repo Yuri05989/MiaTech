@@ -124,9 +124,7 @@ p {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template: 10px / auto auto auto;
   gap: 10px;
   background-color: aqua;
-  
-  
 }
