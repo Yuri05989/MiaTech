@@ -108,3 +108,12 @@ p {
   display: flex;
   flex-grow: 300;
 }
+
+.figlio-1{
+  display: flex;
+  flex-grow: 1;
+}
+.figlio-2{
+  display: flex;
+  flex-grow: 2;
+}
