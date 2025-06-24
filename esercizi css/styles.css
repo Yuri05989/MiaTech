@@ -124,7 +124,15 @@ p {
 
 .grid-container {
   display: grid;
-  grid-template: 10px / auto auto auto;
+  grid-template: 1px / auto auto auto;
   gap: 10px;
   background-color: aqua;
+}
+
+.grid-item-4,
+.grid-item-5,
+.grid-item-6  {
+  grid-template: 46px / auto auto auto;
+    display: grid
+;
 }
