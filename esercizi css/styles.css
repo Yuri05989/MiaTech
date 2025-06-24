@@ -137,6 +137,13 @@ p {
     display: grid
 }
 
+.ciao{
+  background-size: cover;
+  background-color: aliceblue;
+  width: 1047px;
+  height: 941px;
+}
+
 @media only screen and (min-width: 912px) {
  body{
   background-color: blue;
