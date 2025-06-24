@@ -98,4 +98,6 @@ p {
 
 .padre{
   display: flexbox;
+  columns: 3;
+ 
 }
