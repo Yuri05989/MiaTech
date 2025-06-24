@@ -127,6 +127,7 @@ p {
   grid-template: 1px / auto auto auto;
   gap: 10px;
   background-color: aqua;
+;
 }
 
 .grid-item-4,
@@ -134,5 +135,10 @@ p {
 .grid-item-6  {
   grid-template: 46px / auto auto auto;
     display: grid
-;
+}
+
+@media only screen and (max-width: 768px) {
+ body{
+  background-color: blue;
+ }
 }
