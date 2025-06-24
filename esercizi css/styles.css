@@ -97,7 +97,7 @@ p {
 }
 
 .padre{
-  display: flexbox;
+  display: flex;
   columns: 3;
- 
+ flex-direction: column-reverse;
 }
