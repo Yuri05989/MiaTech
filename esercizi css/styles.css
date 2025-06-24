@@ -97,8 +97,9 @@ p {
 }
 
 .padre{
-  display: flex;
+  display: flex ;
   columns: 3;
- flex-direction: column-reverse;
  align-items: center;
+ flex-wrap: wrap;
+ justify-content: center;
 }
