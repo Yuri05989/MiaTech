@@ -41,10 +41,10 @@ body {
   background-color: #f1f1f1;
   float: left;
   text-align: center;
- 
+
   padding-bottom: 483px;
   padding-top: 16px;
-  
+
 }
 
 .column-three {
@@ -53,7 +53,7 @@ body {
   float: left;
   text-align: center;
 
- padding-top: 16px;
+  padding-top: 16px;
   margin-left: 10px;
 }
 
@@ -96,27 +96,37 @@ p {
 
 }
 
-.padre{
-  display: flex ;
+.padre {
+  display: flex;
   columns: 3;
- align-items: center;
- flex-wrap: wrap;
- justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.figlio-3{
+.figlio-3 {
   display: flex;
   flex-grow: 300;
   align-self: flex-end;
 }
 
-.figlio-1{
+.figlio-1 {
   display: flex;
- flex-shrink: 204;
- align-self: flex-start;
+  flex-shrink: 204;
+  align-self: flex-start;
 }
-.figlio-2{
+
+.figlio-2 {
   display: flex;
   flex-grow: 2;
   flex-basis: 233px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background-color: aqua;
+  
+  
 }
