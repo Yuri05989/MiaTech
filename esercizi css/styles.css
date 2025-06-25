@@ -63,8 +63,8 @@ p {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto ;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto ;
   gap: 10px;
   background-color: aqua;
   ;
@@ -78,16 +78,16 @@ p {
   grid-row: span 2;
 }
 
-.grid-item-4,
-.grid-item-5,
-.grid-item-6 {
- 
-}
-
 .ciao {
   background-size: cover;
   background-color: aliceblue;
   width: 1047px;
   height: 941px;
+}
+
+.fullscreen{
+width: 100%;
+height: 100vh;
+  background-color: crimson;
 }
 
