@@ -41,7 +41,7 @@ for (let numero = 0; numero <= 20; numero++) {
 }
 // il prompt \\
 let word = prompt('Inserisci una parola');
-console.log(word.length);
+consolwe.log(word.length);
 // richiesta di input corretta\\
 for (let i = 0; i < 5; i++) {
     let parola = prompt('Inserisci una parola');
@@ -60,4 +60,12 @@ if (num > 5) {
 let score = prompt('Inserisci il tuo punteggio');
 if (score >= 90) {
     console.log(' voto Ottimo!');
+}
+// switch case\\
+else if (score >= 80) {
+    console.log('voto Buono!');
+} else if (score >= 70) {
+    console.log('voto Sufficiente!');
+} else {
+    console.log('voto Insufficiente!');
 }
