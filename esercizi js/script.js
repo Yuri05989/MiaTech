@@ -39,3 +39,5 @@ for (let numero = 0; numero <= 20; numero++) {
         console.log(numero);
     }
 }
+// il prompt \\
+let word = prompt('Inserisci una parola');
