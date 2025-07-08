@@ -78,3 +78,11 @@ for (let i = 0; i < numbers.length; i++) {
     somma += numbers[i];
 }
 console.log(somma);
+//reverse di un array\\
+let array = [1, 2, 3, 4, 5];
+let reversedArray = []; 
+for (let i = array.length - 1; i >= 0; i--) {
+    reversedArray.push(array[i]);
+}
+console.log(reversedArray); // [5, 4, 3, 2, 1]
+ 
