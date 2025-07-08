@@ -42,3 +42,12 @@ for (let numero = 0; numero <= 20; numero++) {
 // il prompt \\
 let word = prompt('Inserisci una parola');
 consolwe.log(word.length);
+// richiesta di input corretta\\
+for (let i = 0; i < 5; i++) {
+    let parola = prompt('Inserisci una parola');
+    if (parola.length > 0) {
+        console.log(parola.length);
+    } else {
+        console.log('Input non valido');
+    }
+} while (parola.length === 0);
