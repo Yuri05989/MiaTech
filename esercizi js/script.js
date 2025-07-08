@@ -25,7 +25,7 @@ let fuori = 45;
     console.log(dentro)
 }
 console.log(fuori)
-console.log(dentro)
+
 //genera numeri pari e dispari\\
 // Numeri pari da 0 a 20
 for (let numero = 0; numero <= 20; numero++) {
@@ -41,3 +41,4 @@ for (let numero = 0; numero <= 20; numero++) {
 }
 // il prompt \\
 let word = prompt('Inserisci una parola');
+consolwe.log(word.length);
