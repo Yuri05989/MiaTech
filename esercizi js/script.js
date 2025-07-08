@@ -41,7 +41,7 @@ for (let numero = 0; numero <= 20; numero++) {
 }
 // il prompt \\
 let word = prompt('Inserisci una parola');
-consolwe.log(word.length);
+console.log(word.length);
 // richiesta di input corretta\\
 for (let i = 0; i < 5; i++) {
     let parola = prompt('Inserisci una parola');
@@ -55,4 +55,9 @@ for (let i = 0; i < 5; i++) {
 let num = 10;
 if (num > 5) {
     console.log('la variabile e maggiore di 5');
+}
+// if e else e else-if\\
+let score = prompt('Inserisci il tuo punteggio');
+if (score >= 90) {
+    console.log(' voto Ottimo!');
 }
