@@ -51,3 +51,8 @@ for (let i = 0; i < 5; i++) {
         console.log('Input non valido');
     }
 } while (parola.length === 0);
+// if e else\\
+let num = 10;
+if (num > 5) {
+    console.log('la variabile e maggiore di 5');
+}
