@@ -41,7 +41,7 @@ for (let numero = 0; numero <= 20; numero++) {
 }
 // il prompt \\
 let word = prompt('Inserisci una parola');
-consolwe.log(word.length);
+console.log(word.length);
 // richiesta di input corretta\\
 for (let i = 0; i < 5; i++) {
     let parola = prompt('Inserisci una parola');
@@ -72,4 +72,9 @@ else if (score >= 80) {
 //array di numeri\\
 let numbers = [1, 2, 3, 4, 5];
 console.log(numbers[0, 1, 2, 3, 4]); // 1
- 
+ // somma di numeri in un array\\
+let somma = 0;
+for (let i = 0; i < numbers.length; i++) {
+    somma += numbers[i];
+}
+console.log(somma);
