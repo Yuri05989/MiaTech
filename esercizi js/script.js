@@ -110,4 +110,12 @@ console.log(persona.job);
 for (let key in persona) {
     console.log(`${key}: ${persona[key]}`);
 }
-
+// funzioni annidate \\
+function outerFunction(x) {
+    function innerFunction(y) {
+        console.log('Funzione interna');
+        console.log(`x: ${x}, y: ${y}`);
+    }
+    innerFunction(5);
+}
+outerFunction(10);
