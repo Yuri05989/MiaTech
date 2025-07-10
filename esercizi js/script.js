@@ -158,3 +158,6 @@ console.log(keys);
 // Object.values\\
 const values = Object.values(student);
 console.log(values);
+// Object.entries\\
+const entries = Object.entries(student);
+console.log(entries);
