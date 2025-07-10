@@ -103,5 +103,7 @@ console.log(persona.age);
 // modifica la proprietà di un oggetto \\
 persona.age = 31;
 console.log(persona.age);
-
+// aggiungi una proprietà a un oggetto \\
+persona.job = 'Meccanico';
+console.log(persona.job);
 
