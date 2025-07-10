@@ -106,4 +106,8 @@ console.log(persona.age);
 // aggiungi una proprietà a un oggetto \\
 persona.job = 'Meccanico';
 console.log(persona.job);
+// iterazione delle proprietà \\
+for (let key in persona) {
+    console.log(`${key}: ${persona[key]}`);
+}
 
