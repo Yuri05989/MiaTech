@@ -161,3 +161,12 @@ console.log(values);
 // Object.entries\\
 const entries = Object.entries(student);
 console.log(entries);
+// forEach e map \\
+const numbersArray = [1, 2, 3, 4, 5];
+// forEach
+numbersArray.forEach((number) => {
+    console.log(number);
+});
+// map
+const squaredNumbers = numbersArray.map((number) => number * 2);
+console.log(squaredNumbers);
