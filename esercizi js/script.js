@@ -128,3 +128,21 @@ function outerFunctionWithLocalVar() {
     innerFunction();
 }
 outerFunctionWithLocalVar();
+// counter \\
+function createCounter() {
+    let count = 0;
+    return {
+        increment: function(amount) {
+            count += amount;
+            console.log(count);
+        },
+        decrement: function(amount) {
+            count -= amount;
+            console.log(count);
+        }
+    };
+}
+const counter = createCounter();
+counter.increment(1); // 1
+counter.increment(1); // 2
+counter.decrement(1); // 1
