@@ -33,8 +33,8 @@ for (let numero = 0; numero <= 20; numero++) {
         console.log(numero);
     }
 }
-// Numeri dispari da 0 a 20
-for (let numero = 0; numero <= 20; numero++) {
+// Numeri dispari da 10 a 1
+for (let numero = 10; numero >= 1; numero--) {
     if (numero % 2 !== 0) {
         console.log(numero);
     }
@@ -51,28 +51,27 @@ for (let i = 0; i < 5; i++) {
         console.log('Input non valido');
     }
 } while (parola.length === 0);
+do {
+
+} while (parola.length === 0);
 // if e else\\
 let num = 10;
 if (num > 5) {
     console.log('la variabile e maggiore di 5');
 }
 // if e else e else-if\\
-let score = prompt('Inserisci il tuo punteggio');
-if (score >= 90) {
-    console.log(' voto Ottimo!');
+let score = 85;
+if (score >= 90 && score <= 100) {
+    console.log('voto corretto!');
+} else {
+    console.log('voto errato!');
 }
 // switch case\\
-else if (score >= 80) {
-    console.log('voto Buono!');
-} else if (score >= 70) {
-    console.log('voto Sufficiente!');
-} else {
-    console.log('voto Insufficiente!');
-}
+
 //array di numeri\\
 let numbers = [1, 2, 3, 4, 5];
 console.log(numbers[0, 1, 2, 3, 4]); // 1
- // somma di numeri in un array\\
+// somma di numeri in un array\\
 let somma = 0;
 for (let i = 0; i < numbers.length; i++) {
     somma += numbers[i];
@@ -80,9 +79,8 @@ for (let i = 0; i < numbers.length; i++) {
 console.log(somma);
 //reverse di un array\\
 let array = [1, 2, 3, 4, 5];
-let reversedArray = []; 
+let reversedArray = [];
 for (let i = array.length - 1; i >= 0; i--) {
     reversedArray.push(array[i]);
 }
-console.log(reversedArray); // [5, 4, 3, 2, 1]
- 
+console.log(reversedArray); 
