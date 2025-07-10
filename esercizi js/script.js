@@ -170,3 +170,10 @@ numbersArray.forEach((number) => {
 // map
 const squaredNumbers = numbersArray.map((number) => number * 2);
 console.log(squaredNumbers);
+// filter e find \\
+const students = ['name', 'grade', 'age', 'school'];
+const filteredStudents = students.filter((student) => student.length > 4);
+console.log(filteredStudents);
+const foundStudent = students.find((student) => student === 'age');
+console.log(foundStudent);  
+// reduce e sort \\
