@@ -43,17 +43,11 @@ for (let numero = 10; numero >= 1; numero--) {
 let word = prompt('Inserisci una parola');
 console.log(word.length);
 // richiesta di input corretta\\
-for (let i = 0; i < 5; i++) {
-    let parola = prompt('Inserisci una parola');
-    if (parola.length > 0) {
-        console.log(parola.length);
-    } else {
-        console.log('Input non valido');
-    }
-} while (parola.length === 0);
+let max;
 do {
-
-} while (parola.length === 0);
+    max = prompt('Inserisci una parola di almeno 5 caratteri');
+} while (max.length < 5);
+console.log(max);
 // if e else\\
 let num = 10;
 if (num > 5) {
