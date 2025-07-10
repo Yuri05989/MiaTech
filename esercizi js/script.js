@@ -99,3 +99,5 @@ const persona = {
     city: 'Roma',
 };
 console.log(persona.nome);
+console.log(persona.age);
+
