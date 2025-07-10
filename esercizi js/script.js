@@ -146,3 +146,12 @@ const counter = createCounter();
 counter.increment(1); // 1
 counter.increment(1); // 2
 counter.decrement(1); // 1
+// object.keys\\
+const student = {
+    name: 'Alice',
+    age: 25,
+    grade: 'A',
+    school: 'XYZ University',
+};
+const keys = Object.keys(student);
+console.log(keys);
