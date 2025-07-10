@@ -28,17 +28,17 @@ console.log(fuori)
 
 //genera numeri pari e dispari\\
 // Numeri pari da 0 a 20
-for (let numero = 0; numero <= 20; numero++) {
+for (let numero = 0; numero <= 20; numero++) 
     if (numero % 2 === 0) {
         console.log(numero);
-    }
-}
+        }
 // Numeri dispari da 10 a 1
-for (let numero = 10; numero >= 1; numero--) {
+while (numero >= 10) {
     if (numero % 2 !== 0) {
         console.log(numero);
     }
 }
+
 // il prompt \\
 let word = prompt('Inserisci una parola');
 console.log(word.length);
@@ -89,4 +89,4 @@ let reversedArray = [];
 for (let i = array.length - 1; i >= 0; i--) {
     reversedArray.push(array[i]);
 }
-console.log(reversedArray); 
+
