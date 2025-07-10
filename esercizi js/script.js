@@ -119,3 +119,12 @@ function outerFunction(x) {
     innerFunction(5);
 }
 outerFunction(10);
+// persistenza delle variabili locali \\
+function outerFunctionWithLocalVar() {
+    let localVar = 'Variabile locale';
+    function innerFunction() {
+        console.log(localVar);
+    }
+    innerFunction();
+}
+outerFunctionWithLocalVar();
