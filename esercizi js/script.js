@@ -155,3 +155,6 @@ const student = {
 };
 const keys = Object.keys(student);
 console.log(keys);
+// Object.values\\
+const values = Object.values(student);
+console.log(values);
