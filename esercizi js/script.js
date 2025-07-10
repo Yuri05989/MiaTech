@@ -89,4 +89,13 @@ let reversedArray = [];
 for (let i = array.length - 1; i >= 0; i--) {
     reversedArray.push(array[i]);
 }
-
+// popolazione di un array\\
+let arrayPopolato = ['parola'];
+// crea un oggetto \\
+const persona = {
+    nome: 'Mario',
+    cognome: 'Rossi',
+    age: 30,
+    city: 'Roma',
+};
+console.log(persona.nome);
