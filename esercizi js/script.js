@@ -100,4 +100,8 @@ const persona = {
 };
 console.log(persona.nome);
 console.log(persona.age);
+// modifica la proprietà di un oggetto \\
+persona.age = 31;
+console.log(persona.age);
+
 
