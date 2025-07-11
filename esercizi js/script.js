@@ -57,9 +57,13 @@ if (num > 5) {
 let score = 85;
 if (score >= 90 && score <= 100) {
     console.log('voto corretto!');
-} else {
-    console.log('voto errato!');
-}
+} else if (score >= 70 && score < 89) {
+    console.log('voto buono!');
+} else if (score >= 60 && score < 69) {
+    console.log('voto sufficiente!');
+} else if (score >= 0 && score < 59) {
+    console.log('voto insufficiente!');
+} 
 // switch case\\
 switch (score) {
     case 100:
