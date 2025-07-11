@@ -65,18 +65,19 @@ if (score >= 90 && score <= 100) {
     console.log('voto insufficiente!');
 } 
 // switch case\\
-switch (score) {
-    case 100:
-        console.log('voto perfetto!');
+switch (true) {
+    case (score >= 90 && score <= 100):
+        console.log('voto corretto!');
         break;
-    case 90:
-        console.log('voto ottimo!');
-        break;
-    case 80:
+    case (score >= 70 && score < 89):
         console.log('voto buono!');
         break;
-    default:
-        console.log('voto insufficiente');
+    case (score >= 60 && score < 69):
+        console.log('voto sufficiente!');
+        break;
+    case (score >= 0 && score < 59):
+        console.log('voto insufficiente!');
+        break;
 }
 //array di numeri\\
 let numbers = [1, 2, 3, 4, 5];
