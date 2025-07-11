@@ -214,3 +214,11 @@ const badStudents = person.find(item => {
     return item.grade < 60;
 }); 
 // reduce e sort \\
+const expenses = [4,6,8,10,12];
+const sum= expenses.reduce((accumulator, currentValue) =>{
+    return accumulator + currentValue;
+}, 0);
+
+console.log(sum);
+const frutta = ['mela', 'banana', 'kiwi', 'arancia'];
+frutta.sort()
