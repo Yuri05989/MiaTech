@@ -95,7 +95,7 @@ for (let i = array.length - 1; i >= 0; i--) {
     reversedArray.push(array[i]);
 }
 // popolazione di un array\\
-let arrayPopolato = ['parola'];
+
 // crea un oggetto \\
 const persona = {
     nome: 'Mario',
@@ -184,9 +184,33 @@ numbersArray.forEach((number) => {
 const squaredNumbers = numbersArray.map((number) => number * 2);
 console.log(squaredNumbers);
 // filter e find \\
-const students = ['name', 'grade', 'age', 'school'];
-const filteredStudents = students.filter((student) => student.length > 4);
-console.log(filteredStudents);
-const foundStudent = students.find((student) => student === 'age');
-console.log(foundStudent);  
+const person = [
+    {
+        name: 'Mario',
+        grade: 60,
+    },
+    {
+        name: 'Maria',
+        grade: 56,
+    },
+    {
+        name: 'Maurizio',
+        grade: 100,
+    },
+    {
+        name: 'Marco',
+        grade: 110,
+    },
+    {
+        name: 'Mimma',  
+        grade: 34,
+    },
+];
+const goodStudents = person.filter(item => {
+    return item.grade >= 60;
+});
+console.log(goodStudents);
+const badStudents = person.find(item => {
+    return item.grade < 60;
+}); 
 // reduce e sort \\
