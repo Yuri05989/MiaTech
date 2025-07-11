@@ -178,10 +178,10 @@ console.log(entries);
 const numbersArray = [1, 2, 3, 4, 5];
 // forEach
 numbersArray.forEach((number) => {
-    console.log(number);
+    console.log(number * 2);
 });
 // map
-const squaredNumbers = numbersArray.map((number) => number * 2);
+const squaredNumbers = numbersArray.map((number) => number * number);
 console.log(squaredNumbers);
 // filter e find \\
 const person = [
