@@ -116,9 +116,17 @@ function outerFunction(x) {
         console.log('Funzione interna');
         console.log(`x: ${x}, y: ${y}`);
     }
-    innerFunction(5);
+    innerFunction(5); return{
+        x: x,
+        y: 5
+    }
 }
-outerFunction(10);
+outerFunction(10); return{
+   innerFunction: function(y) {
+        console.log('Funzione interna');
+        console.log(`x: ${x}, y: ${y}`);
+    }
+}
 // persistenza delle variabili locali \\
 function outerFunctionWithLocalVar() {
     let localVar = 'Variabile locale';
