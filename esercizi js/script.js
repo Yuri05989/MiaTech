@@ -229,6 +229,9 @@ class Automobile {
         this.modello = modello;
         this.anno = anno;
     }
+    description() {
+        return `Marca: ${this.marca}, Modello: ${this.modello}, Anno: ${this.anno}`;
+    }
     }
     // chilometraggio\\
     class Automobile {
@@ -237,7 +240,9 @@ class Automobile {
         this.modello = modello;
         this.anno = anno;
     }
-    description() {
-        return `Marca: ${this.marca}, Modello: ${this.modello}, Anno: ${this.anno}`;
-    }
-}   
+    chilometraggio = 0;
+    aggiungiChilometri(km) {
+        this.chilometraggio += km;
+        console.log(`Chilometraggio attuale: ${this.chilometraggio} km`);
+    }   
+}
