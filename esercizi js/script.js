@@ -240,9 +240,12 @@ class Automobile {
         this.modello = modello;
         this.anno = anno;
     }
-    chilometraggio = 0;
+    chilometraggio = 59000;
     aggiungiChilometri(km) {
         this.chilometraggio += km;
         console.log(`Chilometraggio attuale: ${this.chilometraggio} km`);
     }   
+    mostraChilometraggio() {
+        return `Chilometraggio: ${this.chilometraggio} km`;
+    }
 }
