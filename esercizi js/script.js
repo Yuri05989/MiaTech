@@ -230,3 +230,14 @@ class Automobile {
         this.anno = anno;
     }
     }
+    // chilometraggio\\
+    class Automobile {
+    constructor(marca, modello, anno) {
+        this.marca = marca;
+        this.modello = modello;
+        this.anno = anno;
+    }
+    description() {
+        return `Marca: ${this.marca}, Modello: ${this.modello}, Anno: ${this.anno}`;
+    }
+}   
