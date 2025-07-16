@@ -221,4 +221,12 @@ const sum= expenses.reduce((accumulator, currentValue) =>{
 
 console.log(sum);
 const frutta = ['mela', 'banana', 'kiwi', 'arancia'];
-frutta.sort()
+frutta.sort();
+// automobile
+class Automobile {
+    constructor(marca, modello, anno) {
+        this.marca = marca;
+        this.modello = modello;
+        this.anno = anno;
+    }
+    }
