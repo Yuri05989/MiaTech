@@ -240,12 +240,22 @@ class Automobile {
         this.modello = modello;
         this.anno = anno;
     }
+}
     chilometraggio = 59000;
-    aggiungiChilometri(km) {
+    aggiungiChilometri(km) 
         this.chilometraggio += km;
         console.log(`Chilometraggio attuale: ${this.chilometraggio} km`);
-    }   
-    mostraChilometraggio() {
+    
+    mostraChilometraggio()
         return `Chilometraggio: ${this.chilometraggio} km`;
+    
+// sottoclasse elettrica\\
+class AutomobileElettrica extends Automobile {
+    constructor(marca, modello, anno, autonomia) {
+        super(marca, modello, anno);
+        this.autonomia = autonomia;
+    }
+    mostraAutonomia() {
+        return `Autonomia: ${this.autonomia} km`;
     }
 }
