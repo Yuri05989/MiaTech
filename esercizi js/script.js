@@ -223,27 +223,27 @@ class Automobile {
         this.marca = marca;
         this.modello = modello;
         this.anno = anno;
+        this.chilometraggio = 59000;
+        this.saluti = '';
     }
     description() {
-        return `Marca: ${this.marca}, Modello: ${this.modello}, Anno: ${this.anno}`;
+        return `Marca: ${this.marca}, Modello: ${this.modello}, Anno: ${this.anno}, Saluti: ${this.saluti}`;
     }
-    }
-    // chilometraggio\\
-    class Automobile{
-    constructor(marca, modello, anno) {
-        this.marca = marca;
-        this.modello = modello;
-        this.anno = anno;
-    }
-}
-    chilometraggio = 59000;
-    aggiungiChilometri(km) 
+    aggiungiChilometri(km) {
         this.chilometraggio += km;
         console.log(`Chilometraggio attuale: ${this.chilometraggio} km`);
-    
-    mostraChilometraggio()
+    }
+    mostraChilometraggio() {
         return `Chilometraggio: ${this.chilometraggio} km`;
-    
+    }
+    #calcolaEtà() {
+        return new Date().getFullYear() - this.anno;
+    }
+    mostraEtà() {
+        return `Età: ${this.#calcolaEtà()} anni`;
+    }
+}
+
 // sottoclasse elettrica\\
 class AutomobileElettrica extends Automobile {
     constructor(marca, modello, anno, autonomia) {
@@ -254,16 +254,3 @@ class AutomobileElettrica extends Automobile {
         return `Autonomia: ${this.autonomia} km`;
     }
 }
-// saluti\\
-class Automobile {
-    constructor(marca, modello, anno, saluti) {
-        this.marca = marca;
-        this.modello = modello;
-        this.anno = anno;
-        this.saluti = saluti;
-    }
-    description() {
-        return `Marca: ${this.marca}, Modello: ${this.modello}, Anno: ${this.anno}, Saluti: ${this.saluti}`;
-    }
-    }
-  
