@@ -265,6 +265,10 @@ class Automobile {
             return 'Chilometraggio nella norma.';
         }
     }
+    #incrementocontatore() {
+        this.chilometraggio++;
+        return `Chilometraggio incrementato: ${this.chilometraggio} km`;
+    }
 }
 
 // sottoclasse elettrica\\
