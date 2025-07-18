@@ -233,6 +233,10 @@ class Automobile {
         this.chilometraggio += km;
         console.log(`Chilometraggio attuale: ${this.chilometraggio} km`);
     }
+    setaggiungichilometri(km) {
+        this.chilometraggio += km;
+        console.log(`Chilometraggio attuale: ${this.chilometraggio} km`);
+    }
 
     getaggiuntiChilometri(km) {
         return `Chilometraggio aggiunto: ${km} km`;
