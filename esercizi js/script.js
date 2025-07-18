@@ -242,6 +242,13 @@ class Automobile {
     mostraEtà() {
         return `Età: ${this.#calcolaEtà()} anni`;
     }
+    _controllokm() {
+        if (this.chilometraggio > 100000) {
+            return 'Attenzione: Chilometraggio elevato!';
+        } else {
+            return 'Chilometraggio nella norma.';
+        }
+    }
 }
 
 // sottoclasse elettrica\\
