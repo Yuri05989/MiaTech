@@ -274,6 +274,9 @@ class Automobile {
         console.log(`Chilometraggio attuale: ${this.chilometraggio} km`);
         return this.#incrementocontatore();
     }
+    mostracontatorechiamata() {
+        return this.aggiungiChilometri();
+    }
 }
 
 // sottoclasse elettrica\\
