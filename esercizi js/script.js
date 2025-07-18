@@ -286,7 +286,12 @@ class Automobile {
         return this.aggiungiChilometri();
     }
 }
-
+class camion extends Automobile {
+    constructor(marca, modello, anno, carico) {
+        super(marca, modello, anno);
+        this.carico = carico;
+    }
+}
 // sottoclasse elettrica\\
 class AutomobileElettrica extends Automobile {
     constructor(marca, modello, anno, autonomia) {
