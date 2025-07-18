@@ -269,6 +269,11 @@ class Automobile {
         this.chilometraggio++;
         return `Chilometraggio incrementato: ${this.chilometraggio} km`;
     }
+    aggiungiChilometri(km) {
+        this.chilometraggio += km;
+        console.log(`Chilometraggio attuale: ${this.chilometraggio} km`);
+        return this.#incrementocontatore();
+    }
 }
 
 // sottoclasse elettrica\\
