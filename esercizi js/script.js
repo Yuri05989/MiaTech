@@ -126,12 +126,7 @@ function outerFunction(x) {
         y: 5
     }
 }
-outerFunction(10); return{
-   innerFunction: function(y) {
-        console.log('Funzione interna');
-        console.log(`x: ${x}, y: ${y}`);
-    }
-}
+
 // persistenza delle variabili locali \\
 function outerFunctionWithLocalVar() {
     let localVar = 'Variabile locale';
@@ -234,7 +229,7 @@ class Automobile {
     }
     }
     // chilometraggio\\
-    class Automobile {
+    class Automobile{
     constructor(marca, modello, anno) {
         this.marca = marca;
         this.modello = modello;
@@ -259,3 +254,16 @@ class AutomobileElettrica extends Automobile {
         return `Autonomia: ${this.autonomia} km`;
     }
 }
+// saluti\\
+class Automobile {
+    constructor(marca, modello, anno, saluti) {
+        this.marca = marca;
+        this.modello = modello;
+        this.anno = anno;
+        this.saluti = saluti;
+    }
+    description() {
+        return `Marca: ${this.marca}, Modello: ${this.modello}, Anno: ${this.anno}, Saluti: ${this.saluti}`;
+    }
+    }
+  
