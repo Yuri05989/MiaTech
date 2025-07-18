@@ -287,9 +287,24 @@ class Automobile {
     }
 }
 class camion extends Automobile {
-    constructor(marca, modello, anno, carico) {
+    constructor(marca, modello, anno, carico, caricoMassimo) {
         super(marca, modello, anno);
         this.carico = carico;
+        this.caricoMassimo = caricoMassimo;
+    }
+    caricoMassimo() {
+        return `Carico massimo: ${this.caricoMassimo} kg`;
+    }
+    description() {
+        return `Camion - ${super.description()}, Carico: ${this.carico} kg, ${this.caricoMassimo()}`;
+    }
+    carica(kg) {    
+        if (this.carico + kg <= this.caricoMassimo) {
+            this.carico += kg;
+            console.log(`Carico attuale: ${this.carico} kg`);
+        } else {
+            console.log(`Carico massimo superato! Non puoi caricare più di ${this.caricoMassimo} kg.`);
+        }
     }
 }
 // sottoclasse elettrica\\
