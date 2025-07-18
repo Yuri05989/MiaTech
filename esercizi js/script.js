@@ -249,6 +249,15 @@ class Automobile {
             return 'Chilometraggio nella norma.';
         }
     }
+    confrontakilometri(automobile) {
+        if (this.chilometraggio > automobile.chilometraggio) {
+            return `${this.marca} ha più chilometri di ${automobile.marca}`;
+        } else if (this.chilometraggio < automobile.chilometraggio) {
+            return `${automobile.marca} ha più chilometri di ${this.marca}`;
+        } else {
+            return `${this.marca} e ${automobile.marca} hanno lo stesso chilometraggio`;
+        }
+    }
 }
 
 // sottoclasse elettrica\\
