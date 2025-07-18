@@ -258,6 +258,13 @@ class Automobile {
             return `${this.marca} e ${automobile.marca} hanno lo stesso chilometraggio`;
         }
     }
+    #Contatore() {
+        if (this.chilometraggio > 100000) {
+            return 'Attenzione: Chilometraggio elevato!';
+        } else {
+            return 'Chilometraggio nella norma.';
+        }
+    }
 }
 
 // sottoclasse elettrica\\
