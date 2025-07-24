@@ -326,7 +326,8 @@ class AutomobileElettrica extends Automobile {
 }
 
 const Numeri = [1, 2, 3, 4, 5];
-const primo = Numeri[0];
 console.log(primo);
 constsecondo =Numeri[1];
 console.log(secondo);
+const [primo, terzo]= Numeri;
+console.log(primo, terzo);
