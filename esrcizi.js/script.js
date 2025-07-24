@@ -236,12 +236,12 @@ class Automobile {
         this.chilometraggio += km;
         console.log(`Chilometraggio attuale: ${this.chilometraggio} km`);
     }
-    setaggiungichilometri(km) {
+    set aggiungichilometri(km) {
         this.chilometraggio += km;
         console.log(`Chilometraggio attuale: ${this.chilometraggio} km`);
     }
 
-    getaggiuntiChilometri(km) {
+    get aggiungiChilometri(km) {
         return `Chilometraggio aggiunto: ${km} km`;
     }
     mostraChilometraggio() {
@@ -331,3 +331,9 @@ constsecondo =Numeri[1];
 console.log(secondo);
 const [primo, terzo]= Numeri;
 console.log(primo, terzo);
+const user = {
+    names: 'Yuri',   
+    age: 30,
+    job: 'Developer',
+}
+const { names, age, job, city: roma } = user;
