@@ -352,3 +352,14 @@ const array1 = [1, 2, 3];
 const array2 = [4, 5, 6];
 const combinedArray = [...array1, ...array2];
 console.log(combinedArray); 
+const oggetto1 = {
+    elettronica: 'Telefono',
+    marca: 'Apple', 
+    modello: 'iPhone 13',
+};
+elettronica = {
+    ...oggetto1,    
+    prezzo: 999,
+    disponibilità: 'Disponibile',
+};
+console.log(elettronica);
