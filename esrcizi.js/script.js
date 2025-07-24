@@ -347,3 +347,8 @@ const artista = musica.artista;
 console.log(artista, titolo);  
 const Numbers2 = [1, 2, 3, 4, 5];
 const numbers3 = [...Numbers2,];
+// Esempio di spread operator
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const combinedArray = [...array1, ...array2];
+console.log(combinedArray); 
