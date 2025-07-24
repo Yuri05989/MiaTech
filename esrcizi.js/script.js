@@ -324,3 +324,9 @@ class AutomobileElettrica extends Automobile {
         return `Autonomia: ${this.autonomia} km`;
     }
 }
+
+const Numeri = [1, 2, 3, 4, 5];
+const [primo]= Numeri;
+console.log(primo);
+const[secondo]=Numeri;
+console.log(secondo);
