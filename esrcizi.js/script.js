@@ -337,3 +337,11 @@ const user = {
     job: 'Developer',
 }
 const { names, age, job, city: roma } = user;
+const musica = {
+    titolo: 'Bohemian Rhapsody',
+    artista: 'Queen',
+    anno: 1975,
+}
+const titolo = musica.titolo;
+const artista = musica.artista; 
+console.log(artista, titolo);  
