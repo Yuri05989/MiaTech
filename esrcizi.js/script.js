@@ -345,3 +345,5 @@ const musica = {
 const titolo = musica.titolo;
 const artista = musica.artista; 
 console.log(artista, titolo);  
+const Numbers2 = [1, 2, 3, 4, 5];
+const numbers3 = [...Numbers2,];
