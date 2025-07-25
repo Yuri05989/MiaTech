@@ -365,3 +365,14 @@ elettronica = {
     disponibilità: 'Disponibile',
 };
 console.log(elettronica);
+
+const oggetto2 = {
+    nome: 'Mario',  
+    cognome: 'Rossi',
+    eta: 30,
+    indirizzo: {
+        via: 'Via Roma',
+        città: 'Roma',
+    },};
+const jobs = {jobs: developer, titolo: 'Sviluppatore',};
+console.log(jobs);
