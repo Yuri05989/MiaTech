@@ -331,6 +331,8 @@ constsecondo =Numeri[1];
 console.log(secondo);
 const [primo,, terzo]= Numeri;
 console.log(primo, terzo);
+const [primo2, secondo, terzo2 , quarto , quinto , sesto, settimo] = Numeri;
+console.log(primo2, secondo, terzo2);
 const user = {
     names: 'Yuri',   
     age: 30,
