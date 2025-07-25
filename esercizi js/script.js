@@ -329,7 +329,7 @@ const Numeri = [1, 2, 3, 4, 5];
 console.log(primo);
 constsecondo =Numeri[1];
 console.log(secondo);
-const [primo, terzo]= Numeri;
+const [primo,, terzo]= Numeri;
 console.log(primo, terzo);
 const user = {
     names: 'Yuri',   
