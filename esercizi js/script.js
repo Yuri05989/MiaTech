@@ -227,7 +227,7 @@ class Automobile {
         this.saluti = '';
     }
     static verificaistanza(obj, classe){
-        exmploeof(obj, classe) ? console.log('L\'oggetto è un\'istanza della classe') : console.log('L\'oggetto non è un\'istanza della classe');
+        return obj instanceof classe;   
     }
     description() {
         return `Marca: ${this.marca}, Modello: ${this.modello}, Anno: ${this.anno}, Saluti: ${this.saluti}`;
