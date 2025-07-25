@@ -332,7 +332,7 @@ console.log(secondo);
 const [primo,, terzo]= Numeri;
 console.log(primo, terzo);
 const [primo2, secondo, terzo2 , quarto , quinto , sesto, settimo] = Numeri;
-console.log(primo2, secondo, terzo2);
+console.log(primo2, secondo, terzo2 , quarto, quinto, sesto, settimo);
 const user = {
     names: 'Yuri',   
     age: 30,
