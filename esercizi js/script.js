@@ -226,6 +226,9 @@ class Automobile {
         this.chilometraggio = 59000;
         this.saluti = '';
     }
+    static verificaistanza(obj, classe){
+        exmploeof(obj, classe) ? console.log('L\'oggetto è un\'istanza della classe') : console.log('L\'oggetto non è un\'istanza della classe');
+    }
     description() {
         return `Marca: ${this.marca}, Modello: ${this.modello}, Anno: ${this.anno}, Saluti: ${this.saluti}`;
     }
@@ -233,13 +236,13 @@ class Automobile {
         this.chilometraggio += km;
         console.log(`Chilometraggio attuale: ${this.chilometraggio} km`);
     }
-    setaggiungichilometri(km) {
+    set aggiungichilometri(km) {
         this.chilometraggio += km;
         console.log(`Chilometraggio attuale: ${this.chilometraggio} km`);
     }
 
-    getaggiuntiChilometri(km) {
-        return `Chilometraggio aggiunto: ${km} km`;
+    get chilometraggioAttuale() {
+        return `Chilometraggio attuale: ${this.chilometraggio} km`;
     }
     mostraChilometraggio() {
         return `Chilometraggio: ${this.chilometraggio} km`;
@@ -286,6 +289,8 @@ class Automobile {
         return this.aggiungiChilometri();
     }
 }
+const Auto1 = new Automobile('Fiat', 'Panda', 2015);
+console.log(Auto1.description());
 class camion extends Automobile {
     constructor(marca, modello, anno, carico, caricoMassimo) {
         super(marca, modello, anno);
@@ -307,6 +312,8 @@ class camion extends Automobile {
         }
     }
 }
+const camion1 = new camion('Mercedes', 'Actros', 2020, 5000, 10000);
+console.log(camion1.description());
 // sottoclasse elettrica\\
 class AutomobileElettrica extends Automobile {
     constructor(marca, modello, anno, autonomia) {
@@ -317,3 +324,42 @@ class AutomobileElettrica extends Automobile {
         return `Autonomia: ${this.autonomia} km`;
     }
 }
+
+const Numeri = [1, 2, 3, 4, 5];
+console.log(primo);
+constsecondo =Numeri[1];
+console.log(secondo);
+const [primo, terzo]= Numeri;
+console.log(primo, terzo);
+const user = {
+    names: 'Yuri',   
+    age: 30,
+    job: 'Developer',
+}
+const { names, age, job, city: roma } = user;
+const musica = {
+    titolo: 'Bohemian Rhapsody',
+    artista: 'Queen',
+    anno: 1975,
+}
+const titolo = musica.titolo;
+const artista = musica.artista; 
+console.log(artista, titolo);  
+const Numbers2 = [1, 2, 3, 4, 5];
+const numbers3 = [...Numbers2,];
+// Esempio di spread operator
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const combinedArray = [...array1, ...array2];
+console.log(combinedArray); 
+const oggetto1 = {
+    elettronica: 'Telefono',
+    marca: 'Apple', 
+    modello: 'iPhone 13',
+};
+elettronica = {
+    ...oggetto1,    
+    prezzo: 999,
+    disponibilità: 'Disponibile',
+};
+console.log(elettronica);
