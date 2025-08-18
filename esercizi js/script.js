@@ -382,6 +382,8 @@ function somma(...numeri) {
 console.log(somma(1, 2, 3));         
 console.log(somma(10, 20));          
 console.log(somma(5, 15, 25, 35));  
-
+//destructuring array con rest operator\\
+const [first, second, ...rest] = [1, 2, 3, 4, 5];
+console.log(first); 
 
 
