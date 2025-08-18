@@ -386,4 +386,9 @@ console.log(somma(5, 15, 25, 35));
 const [first, second, ...rest] = [1, 2, 3, 4, 5];
 console.log(first); 
 
+// Destructuring oggetto con rest operator\\
+const { nome, citta, eta,  ...resto } = oggetto2;
+console.log(nome); 
+console.log(resto);
+//
 
