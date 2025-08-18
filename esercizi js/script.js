@@ -403,4 +403,9 @@ const jsonData = '{"name": "Yuri", "age": 30, "city": "Roma"}';
 const data = JSON.parse(jsonData);
 data.age = 31;
 const updatedJsonData = JSON.stringify(data);
+// stringa semplice con template literals \\
+const nomeUtente = 'Yuri Pirrone';
+let nomeee = 'mario rossi';
+const combinazione = `${nomeUtente} ${nomeee}`;
+console.log(combinazione); 
 
