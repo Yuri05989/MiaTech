@@ -390,5 +390,8 @@ console.log(first);
 const { nome, citta, eta,  ...resto } = oggetto2;
 console.log(nome); 
 console.log(resto);
-//
+//conversione di un oggetto in json \\
+const obj ={name: 'Yuri', age: 30, city: 'Roma'};
+const jsonString = JSON.stringify(obj);
+console.log(jsonString);
 
