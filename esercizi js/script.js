@@ -394,4 +394,8 @@ console.log(resto);
 const obj ={name: 'Yuri', age: 30, city: 'Roma'};
 const jsonString = JSON.stringify(obj);
 console.log(jsonString);
+// conversione di un json in oggetto \\
+const json = '{"name": "Yuri", "age": 30, "city": "Roma"}';
+const parsedObj = JSON.parse(json);
+console.log(parsedObj);
 
