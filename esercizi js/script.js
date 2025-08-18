@@ -413,5 +413,15 @@ let textoMultilinea = `filippo, rossi, eta: 30, città: Roma
 `;
 let.textoMultilinea = `mario, bianchi, eta: 25, città: Milano
 `;
-
 console.log(textoMultilinea);
+//funxioni e template literals \\
+function formattaPersona(persona) {
+    return `Nome: ${persona.nome}, Cognome: ${persona.cognome}, Età: ${persona.age}, Città: ${persona.city}`;
+}
+const personaEsempio = {
+    nome: 'Mario',
+    cognome: 'Rossi',
+    age: 30,
+    city: 'Roma'
+};
+console.log(formattaPersona(personaEsempio));
