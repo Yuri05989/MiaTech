@@ -408,4 +408,10 @@ const nomeUtente = 'Yuri Pirrone';
 let nomeee = 'mario rossi';
 const combinazione = `${nomeUtente} ${nomeee}`;
 console.log(combinazione); 
+// stringa multilinea con template literals \\
+let textoMultilinea = `filippo, rossi, eta: 30, città: Roma
+`;
+let.textoMultilinea = `mario, bianchi, eta: 25, città: Milano
+`;
 
+console.log(textoMultilinea);
