@@ -398,4 +398,9 @@ console.log(jsonString);
 const json = '{"name": "Yuri", "age": 30, "city": "Roma"}';
 const parsedObj = JSON.parse(json);
 console.log(parsedObj);
+//manipolazione di dati json \\
+const jsonData = '{"name": "Yuri", "age": 30, "city": "Roma"}';
+const data = JSON.parse(jsonData);
+data.age = 31;
+const updatedJsonData = JSON.stringify(data);
 
