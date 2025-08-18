@@ -425,3 +425,18 @@ const personaEsempio = {
     city: 'Roma'
 };
 console.log(formattaPersona(personaEsempio));
+//utilizzare console.log\\
+// Esempio di stampa di diversi tipi di dati con console.log
+
+let numeros = 42; // number
+let testo = "Ciao mondo"; // string
+let booleano = true; // boolean
+let arrays = [1, 2, 3]; // array
+let oggetto = { nome: "Mario", eta: 30 }; // object
+let nullo = null; // null
+let indefinito; // undefined
+
+console.log(numero);
+console.log(testo);
+console.log(booleano);
+console.log(array);
