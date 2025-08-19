@@ -458,5 +458,13 @@ setTimeout(() => {
 setInterval(() => {
     console.log("Questo messaggio appare ogni 2 secondi");
 }, 2000);
+// interrompere setInterval con clearInterval \\
+let intervalId = setInterval(() => {
+    console.log("Questo messaggio appare ogni 2 secondi");
+}, 2000);
 
+setTimeout(() => {
+    clearInterval(intervalId);
+    console.log("Intervallo fermato dopo 10 secondi");
+}, 10000);
 
