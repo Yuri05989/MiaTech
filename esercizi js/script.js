@@ -505,3 +505,17 @@ function stampaMessaggio(risultato) {
 }
 
 sommaConCallback(5, 3, stampaMessaggio);
+//funzione con callback e passaggio di parametri\\
+function eseguiOperazione(a, b, callback) {
+  const risultato = a * b;
+  console.log("Operazione completata. Risultato:", risultato);
+  if (typeof callback === 'function') {
+    callback(risultato);
+  } else {
+    console.error("Errore: il callback non è una funzione.");
+  }
+}
+function mostraRisultato(valore) {
+  console.log("Callback ricevuto. Il risultato è:", valore);
+}
+eseguiOperazione(6, 7, mostraRisultato);
