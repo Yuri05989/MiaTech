@@ -442,3 +442,12 @@ console.log(array);
 //utilizzare console.error e console.warn\\
 console.error("Si è verificato un errore!");
 console.warn("Attenzione: questo è un avviso!");
+// Utilizzo di console.table e console.group\\
+const persone = [
+    { nome: "Mario", eta: 30 },
+    { nome: "Luigi", eta: 25 }, 
+    { nome: "Peach", eta: 28 }
+];
+console.table(persone);
+console.group("Dettagli Persona");
+
