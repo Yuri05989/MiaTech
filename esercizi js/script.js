@@ -476,3 +476,17 @@ try {
 } catch (error) {
     console.error("Si è verificato un errore:", error.message);
 }     
+// gestione di piu tipi di errori\\
+
+// uso di finally per eseguire codice indipendente dal risulatato\\
+try {
+    let result = 10 / 0;
+    if (!isFinite(result)) {
+        throw new Error("Divisione per zero non consentita");
+    }
+} catch (error) {
+    console.error("Si è verificato un errore:", error.message);
+}
+finally {
+    console.log("Questo codice viene eseguito sempre, indipendentemente dagli errori");
+}
