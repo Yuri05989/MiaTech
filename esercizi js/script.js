@@ -28,10 +28,10 @@ console.log(fuori)
 
 //genera numeri pari e dispari\\
 // Numeri pari da 0 a 20
-for (let numero = 0; numero <= 20; numero++) 
+for (let numero = 0; numero <= 20; numero++)
     if (numero % 2 === 0) {
         console.log(numero);
-        }
+    }
 // Numeri dispari da 10 a 1
 while (numero >= 10) {
     if (numero % 2 !== 0) {
@@ -63,7 +63,7 @@ if (score >= 90 && score <= 100) {
     console.log('voto sufficiente!');
 } else if (score >= 0 && score < 59) {
     console.log('voto insufficiente!');
-} 
+}
 // switch case\\
 switch (true) {
     case (score >= 90 && score <= 100):
@@ -121,7 +121,7 @@ function outerFunction(x) {
         console.log('Funzione interna');
         console.log(`x: ${x}, y: ${y}`);
     }
-    innerFunction(5); return{
+    innerFunction(5); return {
         x: x,
         y: 5
     }
@@ -140,11 +140,11 @@ outerFunctionWithLocalVar();
 function createCounter() {
     let count = 0;
     return {
-        increment: function(amount) {
+        increment: function (amount) {
             count += amount;
             console.log(count);
         },
-        decrement: function(amount) {
+        decrement: function (amount) {
             count -= amount;
             console.log(count);
         }
@@ -197,7 +197,7 @@ const person = [
         grade: 110,
     },
     {
-        name: 'Mimma',  
+        name: 'Mimma',
         grade: 34,
     },
 ];
@@ -207,10 +207,10 @@ const goodStudents = person.filter(item => {
 console.log(goodStudents);
 const badStudents = person.find(item => {
     return item.grade < 60;
-}); 
+});
 // reduce e sort \\
-const expenses = [4,6,8,10,12];
-const sum= expenses.reduce((accumulator, currentValue) =>{
+const expenses = [4, 6, 8, 10, 12];
+const sum = expenses.reduce((accumulator, currentValue) => {
     return accumulator + currentValue;
 }, 0);
 
@@ -226,8 +226,8 @@ class Automobile {
         this.chilometraggio = 59000;
         this.saluti = '';
     }
-    static verificaistanza(obj, classe){
-        return obj instanceof classe;   
+    static verificaistanza(obj, classe) {
+        return obj instanceof classe;
     }
     description() {
         return `Marca: ${this.marca}, Modello: ${this.modello}, Anno: ${this.anno}, Saluti: ${this.saluti}`;
@@ -303,7 +303,7 @@ class camion extends Automobile {
     description() {
         return `Camion - ${super.description()}, Carico: ${this.carico} kg, ${this.caricoMassimo()}`;
     }
-    carica(kg) {    
+    carica(kg) {
         if (this.carico + kg <= this.caricoMassimo) {
             this.carico += kg;
             console.log(`Carico attuale: ${this.carico} kg`);
@@ -327,14 +327,14 @@ class AutomobileElettrica extends Automobile {
 
 const Numeri = [1, 2, 3, 4, 5];
 console.log(primo);
-constsecondo =Numeri[1];
+constsecondo = Numeri[1];
 console.log(secondo);
-const [primo,, terzo]= Numeri;
+const [primo, , terzo] = Numeri;
 console.log(primo, terzo);
-const [primo2, secondo, terzo2 , quarto , quinto , sesto, settimo] = Numeri;
-console.log(primo2, secondo, terzo2 , quarto, quinto, sesto, settimo);
+const [primo2, secondo, terzo2, quarto, quinto, sesto, settimo] = Numeri;
+console.log(primo2, secondo, terzo2, quarto, quinto, sesto, settimo);
 const user = {
-    names: 'Yuri',   
+    names: 'Yuri',
     age: 30,
     job: 'Developer',
 }
@@ -345,53 +345,54 @@ const musica = {
     anno: 1975,
 }
 const titolo = musica.titolo;
-const artista = musica.artista; 
-console.log(artista, titolo);  
+const artista = musica.artista;
+console.log(artista, titolo);
 const Numbers2 = [1, 2, 3, 4, 5];
 const numbers3 = [...Numbers2,];
 // Esempio di spread operator
 const array1 = [1, 2, 3];
 const array2 = [4, 5, 6];
 const combinedArray = [...array1, ...array2];
-console.log(combinedArray); 
+console.log(combinedArray);
 const oggetto1 = {
     elettronica: 'Telefono',
-    marca: 'Apple', 
+    marca: 'Apple',
     modello: 'iPhone 13',
 };
 elettronica = {
-    ...oggetto1,    
+    ...oggetto1,
     prezzo: 999,
     disponibilità: 'Disponibile',
 };
 console.log(elettronica);
 
 const oggetto2 = {
-    nome: 'Mario',  
+    nome: 'Mario',
     cognome: 'Rossi',
     eta: 30,
     indirizzo: {
         via: 'Via Roma',
         città: 'Roma',
-    },};
-const jobs = {jobs: developer, titolo: 'Sviluppatore',};
+    },
+};
+const jobs = { jobs: developer, titolo: 'Sviluppatore', };
 console.log(jobs);
 function somma(...numeri) {
     return numeri.reduce((acc, curr) => acc + curr, 0);
 }
-console.log(somma(1, 2, 3));         
-console.log(somma(10, 20));          
-console.log(somma(5, 15, 25, 35));  
+console.log(somma(1, 2, 3));
+console.log(somma(10, 20));
+console.log(somma(5, 15, 25, 35));
 //destructuring array con rest operator\\
 const [first, second, ...rest] = [1, 2, 3, 4, 5];
-console.log(first); 
+console.log(first);
 
 // Destructuring oggetto con rest operator\\
-const { nome, citta, eta,  ...resto } = oggetto2;
-console.log(nome); 
+const { nome, citta, eta, ...resto } = oggetto2;
+console.log(nome);
 console.log(resto);
 //conversione di un oggetto in json \\
-const obj ={name: 'Yuri', age: 30, city: 'Roma'};
+const obj = { name: 'Yuri', age: 30, city: 'Roma' };
 const jsonString = JSON.stringify(obj);
 console.log(jsonString);
 // conversione di un json in oggetto \\
@@ -407,7 +408,7 @@ const updatedJsonData = JSON.stringify(data);
 const nomeUtente = 'Yuri Pirrone';
 let nomeee = 'mario rossi';
 const combinazione = `${nomeUtente} ${nomeee}`;
-console.log(combinazione); 
+console.log(combinazione);
 // stringa multilinea con template literals \\
 let textoMultilinea = `filippo, rossi, eta: 30, città: Roma
 `;
@@ -427,16 +428,17 @@ const personaEsempio = {
 console.log(formattaPersona(personaEsempio));
 //utilizzare console.log\\
 // Esempio di stampa di diversi tipi di dati con console.log
-
-let numeros = 42; // number
-let testo = "Ciao mondo"; // string
-let booleano = true; // boolean
-let arrays = [1, 2, 3]; // array
-let oggetto = { nome: "Mario", eta: 30 }; // object
-let nullo = null; // null
-let indefinito; // undefined
-
+let numeros = 42;
+let testo = "Ciao mondo";
+let booleano = true;
+let arrays = [1, 2, 3];
+let oggetto = { nome: "Mario", eta: 30 };
+let nullo = null;
+let indefinito;
 console.log(numero);
 console.log(testo);
 console.log(booleano);
 console.log(array);
+//utilizzare console.error e console.warn\\
+console.error("Si è verificato un errore!");
+console.warn("Attenzione: questo è un avviso!");
