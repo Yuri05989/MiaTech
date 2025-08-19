@@ -454,4 +454,9 @@ console.group("Dettagli Persona");
 setTimeout(() => {
     console.log("Questo messaggio appare dopo 3 secondi");
 }, 2000);
+//utilizza setInterval \\
+setInterval(() => {
+    console.log("Questo messaggio appare ogni 2 secondi");
+}, 2000);
+
 
