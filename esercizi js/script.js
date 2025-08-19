@@ -467,4 +467,12 @@ setTimeout(() => {
     clearInterval(intervalId);
     console.log("Intervallo fermato dopo 10 secondi");
 }, 10000);
-
+// gestione di un errore semplice\\
+try {
+    let result = 10 / 0;
+    if (!isFinite(result)) {
+        throw new Error("Divisione per zero non consentita");
+    }
+} catch (error) {
+    console.error("Si è verificato un errore:", error.message);
+}     
