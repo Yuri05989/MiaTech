@@ -450,4 +450,8 @@ const persone = [
 ];
 console.table(persone);
 console.group("Dettagli Persona");
+//utilizza setTimeout \\
+setTimeout(() => {
+    console.log("Questo messaggio appare dopo 3 secondi");
+}, 2000);
 
