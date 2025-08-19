@@ -490,3 +490,18 @@ try {
 finally {
     console.log("Questo codice viene eseguito sempre, indipendentemente dagli errori");
 }
+//funzione di base callback\\
+function sommaConCallback(a, b, callback) {
+  const risultato = a + b;
+  console.log("Risultato della somma:", risultato);
+  if (typeof callback === "function") {
+    callback(risultato); 
+  } else {
+    console.error("Il callback fornito non è una funzione.");
+  }
+}
+function stampaMessaggio(risultato) {
+  console.log("Callback eseguito. Il risultato ricevuto è:", risultato);
+}
+
+sommaConCallback(5, 3, stampaMessaggio);
