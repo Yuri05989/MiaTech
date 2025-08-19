@@ -519,3 +519,25 @@ function mostraRisultato(valore) {
   console.log("Callback ricevuto. Il risultato è:", valore);
 }
 eseguiOperazione(6, 7, mostraRisultato);
+//callback annidati\\
+// Prima funzione: esegue un'operazione e poi chiama la callback
+function primaOperazione(numero, callback) {
+  console.log("Prima operazione: moltiplico per 2");
+  let risultato = numero * 2;
+
+  // richiamo la callback passando il risultato
+  callback(risultato);
+}
+
+// Seconda funzione: esegue un'operazione e poi chiama la callback
+function secondaOperazione(numero, callback) {
+  console.log("Seconda operazione: sommo 5");
+  let risultato = numero + 5;
+  callback(risultato);
+}
+primaOperazione(10, function(risultato1) {
+  secondaOperazione(risultato1, function(risultato2) {
+    console.log("Risultato finale:", risultato2);
+  });
+});
+
