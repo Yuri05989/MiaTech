@@ -561,5 +561,16 @@ primaOperazione(10, function(risultato1) {
     console.log("Risultato finale:", risultato2);
   });
 });
+// creara una promessa semplice\\
+function delayedMessage() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("La promessa è stata risolta dopo 2 secondi!");
+    }, 2000);
+  });
+}
+delayedMessage().then(message => {
+  console.log(message);
+});
 
 
