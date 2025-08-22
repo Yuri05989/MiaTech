@@ -590,5 +590,25 @@ delayedMessageWithError(false)
 delayedMessageWithError(true)
   .then(message => console.log(message))
   .catch(error => console.error("Errore:", error));
+// promessa finally\\
+function processTask(shouldFail) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (shouldFail) {
+        reject("La promessa è stata rifiutata!");
+      } else {
+        resolve("La promessa è stata risolta!");
+      }
+    }, 2000);
+  });
+}
+processTask(false)
+  .then(result => console.log("Successo:", result))
+  .catch(error => console.error("Errore:", error))
+  .finally(() => console.log("Operazione completata, indipendentemente dal risultato."));
+processTask(true)
+  .then(result => console.log("Successo:", result))
+  .catch(error => console.error("Errore:", error))
+  .finally(() => console.log("Operazione completata, indipendentemente dal risultato."));
 
 
