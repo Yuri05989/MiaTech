@@ -410,11 +410,17 @@ let nomeee = 'mario rossi';
 const combinazione = `${nomeUtente} ${nomeee}`;
 console.log(combinazione);
 // stringa multilinea con template literals \\
-let textoMultilinea = `filippo, rossi, eta: 30, città: Roma
+const nomes = 'Mario';
+const cognome = 'Rossi';
+const infoPersona = `
+Informazioni sulla persona:
+Nome: ${nome}
+Cognome: ${cognome}
+Età: 30
+Città: Milano
+Professione: Sviluppatore
 `;
-let.textoMultilinea = `mario, bianchi, eta: 25, città: Milano
-`;
-console.log(textoMultilinea);
+console.log(infoPersona);
 //funxioni e template literals \\
 function formattaPersona(persona) {
     return `Nome: ${persona.nome}, Cognome: ${persona.cognome}, Età: ${persona.age}, Città: ${persona.city}`;
@@ -503,7 +509,6 @@ function sommaConCallback(a, b, callback) {
 function stampaMessaggio(risultato) {
   console.log("Callback eseguito. Il risultato ricevuto è:", risultato);
 }
-
 sommaConCallback(5, 3, stampaMessaggio);
 //funzione con callback e passaggio di parametri\\
 function eseguiOperazione(a, b, callback) {
@@ -540,4 +545,5 @@ primaOperazione(10, function(risultato1) {
     console.log("Risultato finale:", risultato2);
   });
 });
+
 
