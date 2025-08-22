@@ -483,6 +483,22 @@ try {
     console.error("Si è verificato un errore:", error.message);
 }     
 // gestione di piu tipi di errori\\
+const myString = 12345;  
+
+try {
+  
+  if (typeof myString !== 'string') {
+    throw new TypeError('La variabile non è una stringa!');
+  }
+  const upper = myString.toUpperCase();
+  console.log('Stringa trasformata:', upper);
+} catch (error) {
+  if (error instanceof TypeError) {
+    console.error('Errore di tipo:', error.message);
+  } else {
+    console.error('Errore generico:', error.message);
+  }
+}
 
 // uso di finally per eseguire codice indipendente dal risulatato\\
 try {
