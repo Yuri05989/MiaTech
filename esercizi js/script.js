@@ -572,5 +572,23 @@ function delayedMessage() {
 delayedMessage().then(message => {
   console.log(message);
 });
+//gestone di una promesssa con catch\\
+function delayedMessageWithError(shouldFail) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (shouldFail) {
+        reject("Si è verificato un errore nella promessa!");
+      } else {
+        resolve("La promessa è stata risolta dopo 2 secondi!");
+      }
+    }, 2000);
+  });
+}
+delayedMessageWithError(false)
+  .then(message => console.log(message))
+  .catch(error => console.error("Errore:", error));
+delayedMessageWithError(true)
+  .then(message => console.log(message))
+  .catch(error => console.error("Errore:", error));
 
 
