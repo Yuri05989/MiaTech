@@ -1016,6 +1016,31 @@ setCookie("utente", "Yuri", 1);     // salvo cookie
 getCookie("utente");               // recupero cookie
 deleteCookie("utente");            // rimuovo cookie
 getCookie("utente");               // provo a recuperarlo di nuovo
+// utilizza localstorage\\
+
+  function salvaValore() {
+    localStorage.setItem("miaChiave", "Ciao mondo");
+    console.log("Valore salvato:", localStorage.getItem("miaChiave"));
+  }
+
+  
+  function recuperaValore() {
+    const valore = localStorage.getItem("miaChiave");
+    console.log("Valore recuperato:", valore);
+  }
+
+ 
+  function rimuoviValore() {
+    localStorage.removeItem("miaChiave");
+    console.log("Valore dopo la rimozione:", localStorage.getItem("miaChiave"));
+  }
+
+  
+  salvaValore();
+  recuperaValore();
+  rimuoviValore();
+
+
 
 
 
