@@ -1111,5 +1111,17 @@ p.innerHTML = 'Paragrafo aggiornato! <button onclick="alert(\'Hai cliccato il bo
     });
 const contenitore = document.getElementById("contenitore");
     contenitore.appendChild(ul);
-
-
+  const ul2 = document.createElement("ul");
+    document.getElementById("contenitore").appendChild(ul2);
+const elementiIniziali = ["Mela", "Banana", "Arancia"];
+    elementiIniziali.forEach((frutto) => {
+      const li = document.createElement("li");
+      li.textContent = frutto;
+      ul2.appendChild(li);
+    });
+  const nuoviElementi = ["Pera", "Kiwi", "Uva", "Fragola", "Ananas"];
+    nuoviElementi.forEach((frutto) => {
+      const li = document.createElement("li");
+      li.textContent = frutto;
+      ul2.appendChild(li);
+    });
