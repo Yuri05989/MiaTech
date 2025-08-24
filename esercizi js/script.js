@@ -1102,7 +1102,14 @@ getCookie("utente");               // provo a recuperarlo di nuovo
   p.style.backgroundColor = "lightblue"
 const p = document.getElementById("paragrafo");
 p.innerHTML = 'Paragrafo aggiornato! <button onclick="alert(\'Hai cliccato il bottone!\')">Cliccami</button>';
-
-
+ const ul = document.createElement("ul");
+ const elementi = ["Mela", "Banana", "Arancia"];
+ elementi.forEach((frutto) => {
+      const li = document.createElement("li");
+      li.textContent = frutto;
+      ul.appendChild(li);
+    });
+const contenitore = document.getElementById("contenitore");
+    contenitore.appendChild(ul);
 
 
