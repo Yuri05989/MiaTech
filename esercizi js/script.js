@@ -1100,8 +1100,8 @@ getCookie("utente");               // provo a recuperarlo di nuovo
        const p = document.getElementById("paragrafo");
        p.style.fontSize = "24px"
   p.style.backgroundColor = "lightblue"
-
-
+const p = document.getElementById("paragrafo");
+p.innerHTML = 'Paragrafo aggiornato! <button onclick="alert(\'Hai cliccato il bottone!\')">Cliccami</button>';
 
 
 
