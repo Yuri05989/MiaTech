@@ -837,3 +837,20 @@ Promise.allSettled([promessa1(), promessa2(), promessa3()])
       }
     });
   });
+  // funzione asincrona semplice\\
+  function promessaDopo2Secondi() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Promessa risolta dopo 2 secondi!");
+    }, 2000);
+  });
+}
+
+async function esegui() {
+  console.log("Attendo la promessa...");
+  const messaggio = await promessaDopo2Secondi();
+  console.log(messaggio);
+}
+
+esegui();
+
