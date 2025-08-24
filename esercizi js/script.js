@@ -949,4 +949,23 @@ async function inviaDati() {
 
 
 inviaDati();
+//gestione degli errori con async e await\\
+async function prendiDati() {
+  try {
+    const risposta = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+
+    if (!risposta.ok) {
+      throw new Error("Errore nella risposta: " + risposta.status);
+    }
+
+    const dati = await risposta.json();
+    console.log("Dati restituiti dall'API:", dati);
+  } catch (errore) {
+    console.error("Si è verificato un errore:", errore.message);
+  }
+}
+
+
+prendiDati();
+
 
