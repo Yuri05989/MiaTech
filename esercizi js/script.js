@@ -1097,8 +1097,9 @@ getCookie("utente");               // provo a recuperarlo di nuovo
      console.log(paragrafo);
      const paragrafo = document.querySelector("#mioParagrafo");
       p.innerText = "Testo modificato tramite innerText!";
-      const p = document.getElementById("paragrafo");
-
+       const p = document.getElementById("paragrafo");
+       p.style.fontSize = "24px"
+  p.style.backgroundColor = "lightblue"
 
 
 
