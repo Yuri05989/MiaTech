@@ -853,4 +853,29 @@ async function esegui() {
 }
 
 esegui();
+// gestione degli errori con try e catch\\
+function promessaConParametro(successo) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (successo) {
+        resolve("Promessa risolta con successo!");
+      } else {
+        reject("Errore: la promessa è stata rifiutata!");
+      }
+    }, 2000);
+  });
+}
+
+async function esegui(successo) {
+  try {
+    console.log("Attendo la promessa...");
+    const risultato = await promessaConParametro(successo);
+    console.log("Risultato:", risultato);
+  } catch (errore) {
+    console.error("Errore catturato:", errore);
+  }
+}
+esegui(true);
+esegui(false);
+
 
