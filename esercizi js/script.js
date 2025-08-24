@@ -610,5 +610,23 @@ processTask(true)
   .then(result => console.log("Successo:", result))
   .catch(error => console.error("Errore:", error))
   .finally(() => console.log("Operazione completata, indipendentemente dal risultato."));
-
-
+// catena di promesse semplici\\
+function nuumeroDopo1Secondi(){
+    return new Promise((resolve)=>{
+        setTimeout(()=>{
+            resolve(5);
+            
+        },1000);
+    })
+}
+nuumeroDopo1Secondi()
+.then((numero)=>{
+    return nuum* 2;
+})
+,then((num)=>{
+    return nuum + 3;
+})
+,then((risultato)=>{
+    console.log("Risultato finale:", risultato);
+}
+)   
