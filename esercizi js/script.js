@@ -1039,6 +1039,30 @@ getCookie("utente");               // provo a recuperarlo di nuovo
   salvaValore();
   recuperaValore();
   rimuoviValore();
+// utilizza sessionstorage\\
+
+  function salvaValore() {
+    sessionStorage.setItem("username", "Yuri");
+    console.log("Valore salvato:", sessionStorage.getItem("username"));
+  }
+
+ 
+  function recuperaValore() {
+    const valore = sessionStorage.getItem("username");
+    console.log("Valore recuperato:", valore);
+  }
+
+  
+  function rimuoviValore() {
+    sessionStorage.removeItem("username");
+    console.log("Valore dopo rimozione:", sessionStorage.getItem("username"));
+  }
+
+  
+  salvaValore();      // Salva
+  recuperaValore();   // Recupera
+  rimuoviValore();    // Rimuove
+
 
 
 
