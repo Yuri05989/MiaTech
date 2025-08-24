@@ -1125,3 +1125,14 @@ const elementiIniziali = ["Mela", "Banana", "Arancia"];
       li.textContent = frutto;
       ul2.appendChild(li);
     });
+    //form\\
+     const form = document.getElementById("mioForm");
+     form.addEventListener("submit", function(event) {
+         event.preventDefault();
+          const nomeValue = document.getElementById("nome").value.trim();
+      const cognomeValue = document.getElementById("cognome").value.trim();
+       if (!nomeValue || !cognomeValue) {
+        alert("Per favore, compila entrambi i campi!");
+        return;
+      }alert(`Form inviato correttamente!\nNome: ${nomeValue}\nCognome: ${cognomeValue}`);
+       });
