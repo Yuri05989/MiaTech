@@ -749,3 +749,30 @@ promessaCasuale()
   .catch((errore) => {
     console.error("Errore catturato:", errore.message || errore);
   });
+//utilizzare promise.all \\
+function promessa1() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Promessa 1 risolta dopo 1 secondo");
+    }, 1000); 
+  });
+}
+
+function promessa2() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Promessa 2 risolta dopo 2 secondi");
+    }, 2000); 
+  });
+}
+
+
+Promise.all([promessa1(), promessa2()])
+  .then((risultati) => {
+    console.log("Risultati di entrambe le promesse:");
+    console.log(risultati[0]); 
+    console.log(risultati[1]);  
+  })
+  .catch((errore) => {
+    console.error("Errore in almeno una promessa:", errore);
+  });
