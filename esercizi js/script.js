@@ -910,5 +910,20 @@ async function eseguiInSerie() {
 
 
 eseguiInSerie();
+//eseguire una rischiesta get semplice\\
+async function getDati() {
+  try {
+    const risposta = await fetch("https://jsonplaceholder.typicode.com/posts/1"); 
+    if (!risposta.ok) {
+      throw new Error("Errore nella richiesta: " + risposta.status);
+    }
+    const dati = await risposta.json();
+    console.log("Dati ricevuti:", dati);
+  } catch (errore) {
+    console.error("Errore catturato:", errore.message);
+  }
+}
+
+getDati();
 
 
