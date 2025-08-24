@@ -688,3 +688,30 @@ promessaRifiutata()
   .catch((errore) => {
     console.error("Promessa rifiutata:", errore);
   });
+  //gestione degli errori con catch e then\\
+  function promessaConParametro(successo) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (successo) {
+        resolve("La promessa è stata risolta con successo!");
+      } else {
+        reject("Errore: la promessa è stata rifiutata!");
+      }
+    }, 1000);
+  });
+}
+
+promessaConParametro(true)
+  .then((messaggio) => {
+    console.log("SUCCESSO:", messaggio);
+  })
+  .catch((errore) => {
+    console.error("ERRORE:", errore);
+  });
+promessaConParametro(false)
+  .then((messaggio) => {
+    console.log("SUCCESSO:", messaggio);
+  })
+  .catch((errore) => {
+    console.error("ERRORE:", errore);
+  });
