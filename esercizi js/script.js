@@ -801,3 +801,39 @@ Promise.race([promessa1(), promessa2()])
   .catch((errore) => {
     console.error("Errore:", errore);
   });
+//utilizzare promise.allSettled \\
+function promessa1() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Promessa 1 risolta!");
+    }, 1000);
+  });
+}
+
+function promessa2() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Promessa 2 risolta!");
+    }, 1500);
+  });
+}
+
+function promessa3() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      reject("Promessa 3 rifiutata!");
+    }, 1200);
+  });
+}
+
+
+Promise.allSettled([promessa1(), promessa2(), promessa3()])
+  .then((risultati) => {
+    risultati.forEach((risultato, index) => {
+      if (risultato.status === "fulfilled") {
+        console.log(`Promessa ${index + 1} risolta con:`, risultato.value);
+      } else {
+        console.log(`Promessa ${index + 1} rifiutata con:`, risultato.reason);
+      }
+    });
+  });
