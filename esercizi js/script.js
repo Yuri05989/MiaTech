@@ -967,5 +967,18 @@ async function prendiDati() {
 
 
 prendiDati();
+//comprendere un errore CORS\\
+  async function testFetch() {
+    try {
+      const risposta = await fetch("http://example.com");
+      console.log("Risposta:", risposta);
+    } catch (errore) {
+      console.error("Errore fetch:", errore);
+    }
+  }
+
+  testFetch();
+
+
 
 
