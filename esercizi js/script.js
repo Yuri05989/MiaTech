@@ -715,3 +715,37 @@ promessaConParametro(false)
   .catch((errore) => {
     console.error("ERRORE:", errore);
   });
+  //gestione degli errori in una catena di promesse\\
+  function promessaCasuale() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const numero = Math.floor(Math.random() * 10); 
+      console.log("Numero generato:", numero);
+
+      if (numero >= 5) {
+        resolve(numero); 
+      } else {
+        reject("Errore: numero troppo basso (" + numero + ")");
+      }
+    }, 1000);
+  });
+}
+
+promessaCasuale()
+  .then((num) => {
+    console.log("Prima then:", num);
+    return num * 2; 
+  })
+  .then((num) => {
+    console.log("Seconda then:", num);
+    if (num > 15) {
+      throw new Error("Numero troppo grande dopo la manipolazione!"); 
+    }
+    return num + 1;
+  })
+  .then((num) => {
+    console.log("Risultato finale:", num);
+  })
+  .catch((errore) => {
+    console.error("Errore catturato:", errore.message || errore);
+  });
