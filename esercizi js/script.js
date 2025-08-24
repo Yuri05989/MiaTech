@@ -1059,10 +1059,9 @@ getCookie("utente");               // provo a recuperarlo di nuovo
   }
 
   
-  salvaValore();      // Salva
-  recuperaValore();   // Recupera
-  rimuoviValore();    // Rimuove
-
+  salvaValore();     
+  recuperaValore();   
+  rimuoviValore();  
 
 
 
