@@ -677,3 +677,14 @@ promessaCasuale()
   .catch((errore) => {
     console.error("Promessa rifiutata:", errore);
   });
+// gestione degli errori con catch \\
+function promessaRifiutata() {
+  return new Promise((resolve, reject) => {
+    reject("Errore: qualcosa è andato storto!");
+  });
+}
+
+promessaRifiutata()
+  .catch((errore) => {
+    console.error("Promessa rifiutata:", errore);
+  });
