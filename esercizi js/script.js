@@ -652,3 +652,28 @@ numeroDopo1Secondo()
   .then((risultato) => {
     console.log("Risultato finale:", risultato);
   });
+// catena di promesse con gestione degli errori\\
+function promessaCasuale() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const numero = Math.floor(Math.random() * 10); // numero da 0 a 9
+      if (numero > 4) {
+        resolve(numero); // successo se numero > 4
+      } else {
+        reject("Errore: numero troppo basso (" + numero + ")");
+      }
+    }, 1000);
+  });
+}
+
+promessaCasuale()
+  .then((num) => {
+    console.log("Promessa risolta con:", num);
+    return num * 2; // manipolazione del risultato
+  })
+  .then((numDoppio) => {
+    console.log("Dopo la manipolazione:", numDoppio);
+  })
+  .catch((errore) => {
+    console.error("Promessa rifiutata:", errore);
+  });
