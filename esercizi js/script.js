@@ -1088,6 +1088,16 @@ getCookie("utente");               // provo a recuperarlo di nuovo
   sessionStorage.removeItem(chiave);
   console.log("sessionStorage dopo rimozione:", sessionStorage.getItem(chiave));
 
+   console.log(document);
+      
+    const elemento = document.getElementById("mioParagrafo");
+
+    console.log("Elemento:", elemento);
+    console.log("Contenuto:", elemento.textContent);
+     console.log(paragrafo);
+     const paragrafo = document.querySelector("#mioParagrafo");
+      p.innerText = "Testo modificato tramite innerText!";
+      const p = document.getElementById("paragrafo");
 
 
 
