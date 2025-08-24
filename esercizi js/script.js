@@ -776,3 +776,28 @@ Promise.all([promessa1(), promessa2()])
   .catch((errore) => {
     console.error("Errore in almeno una promessa:", errore);
   });
+//utilizzare promise.race \\
+function promessa1() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Promessa 1 risolta!");
+    }, 2000); 
+  });
+}
+
+function promessa2() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Promessa 2 risolta!");
+    }, 1000); 
+  });
+}
+
+
+Promise.race([promessa1(), promessa2()])
+  .then((primoRisultato) => {
+    console.log("Prima promessa risolta:", primoRisultato);
+  })
+  .catch((errore) => {
+    console.error("Errore:", errore);
+  });
