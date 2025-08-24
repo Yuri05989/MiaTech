@@ -925,5 +925,28 @@ async function getDati() {
 }
 
 getDati();
+//eseguire una richiesta post \\
+async function inviaDati() {
+  try {
+    const risposta = await fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        title: "Ciao mondo",
+        body: "Questo è un messaggio di test",
+        userId: 1
+      })
+    });
 
+    const dati = await risposta.json();
+    console.log("Dati restituiti dall'API:", dati);
+  } catch (errore) {
+    console.error("Errore nella richiesta:", errore);
+  }
+}
+
+
+inviaDati();
 
