@@ -630,3 +630,25 @@ nuumeroDopo1Secondi()
     console.log("Risultato finale:", risultato);
 }
 )   
+//catena di promesse con condizioni\\
+function numeroDopo1Secondo() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const numero = Math.floor(Math.random() * 100); // numero casuale tra 0 e 99
+      resolve(numero);
+    }, 1000);
+  });
+}
+
+numeroDopo1Secondo()
+  .then((num) => {
+    console.log("Numero generato:", num);
+    if (num % 2 === 0) {
+      return num * 2; // se è pari lo moltiplichiamo per 2
+    } else {
+      return num + 5; // se è dispari aggiungiamo 5
+    }
+  })
+  .then((risultato) => {
+    console.log("Risultato finale:", risultato);
+  });
