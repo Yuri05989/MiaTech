@@ -978,6 +978,45 @@ prendiDati();
   }
 
   testFetch();
+  //gestire i cookies\\
+
+
+function setCookie(nome, valore, giorni) {
+  let data = new Date();
+  data.setTime(data.getTime() + (giorni * 24 * 60 * 60 * 1000)); // scadenza in giorni
+  let scadenza = "expires=" + data.toUTCString();
+  document.cookie = nome + "=" + valore + ";" + scadenza + ";path=/";
+  console.log(`Cookie salvato: ${nome}=${valore}`);
+}
+
+
+function getCookie(nome) {
+  let nomeEQ = nome + "=";
+  let ca = document.cookie.split(';');
+  for (let c of ca) {
+    c = c.trim();
+    if (c.indexOf(nomeEQ) === 0) {
+      let valore = c.substring(nomeEQ.length, c.length);
+      console.log(`Cookie recuperato: ${nome}=${valore}`);
+      return valore;
+    }
+  }
+  console.log(`Cookie "${nome}" non trovato`);
+  return null;
+}
+
+
+function deleteCookie(nome) {
+  document.cookie = nome + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  console.log(`Cookie "${nome}" rimosso`);
+}
+
+
+setCookie("utente", "Yuri", 1);     // salvo cookie
+getCookie("utente");               // recupero cookie
+deleteCookie("utente");            // rimuovo cookie
+getCookie("utente");               // provo a recuperarlo di nuovo
+
 
 
 
