@@ -7,9 +7,16 @@
     <script src="script.js"></script>
 </head>
 <body>
-<p>ciao mondo</p>
+<p id="mioParagrafo">ciao mondo</p>
 <script>
     console.log(document);
+      
+    const elemento = document.getElementById("mioParagrafo");
+
+    console.log("Elemento:", elemento);
+    console.log("Contenuto:", elemento.textContent);
+     
+    
 </script>
 </body>
 </html>
