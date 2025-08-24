@@ -877,5 +877,38 @@ async function esegui(successo) {
 }
 esegui(true);
 esegui(false);
+// funzioni asincrone in serie\\
+async function funzione1() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Risultato funzione 1 (dopo 2s)");
+    }, 2000);
+  });
+}
+
+
+async function funzione2() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Risultato funzione 2 (dopo 1s)");
+    }, 1000);
+  });
+}
+
+
+async function eseguiInSerie() {
+  console.log("Inizio esecuzione...");
+
+  const risultato1 = await funzione1();
+  console.log(risultato1);
+
+  const risultato2 = await funzione2();
+  console.log(risultato2);
+
+  console.log("Entrambe le funzioni completate!");
+}
+
+
+eseguiInSerie();
 
 
