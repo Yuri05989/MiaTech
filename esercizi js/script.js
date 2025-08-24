@@ -1062,6 +1062,32 @@ getCookie("utente");               // provo a recuperarlo di nuovo
   salvaValore();     
   recuperaValore();   
   rimuoviValore();  
+//utilizza seessionstorage e localstorage\\
+
+  const chiave = "utente";
+  const valore = "Yuri";
+
+  
+  localStorage.setItem(chiave, valore);
+  console.log("localStorage salvato:", localStorage.getItem(chiave));
+
+  e
+  sessionStorage.setItem(chiave, valore);
+  console.log("sessionStorage salvato:", sessionStorage.getItem(chiave));
+
+
+  const valoreLocal = localStorage.getItem(chiave);
+  const valoreSession = sessionStorage.getItem(chiave);
+  console.log("localStorage recuperato:", valoreLocal);
+  console.log("sessionStorage recuperato:", valoreSession);
+
+  
+  localStorage.removeItem(chiave);
+  console.log("localStorage dopo rimozione:", localStorage.getItem(chiave));
+
+  sessionStorage.removeItem(chiave);
+  console.log("sessionStorage dopo rimozione:", sessionStorage.getItem(chiave));
+
 
 
 
