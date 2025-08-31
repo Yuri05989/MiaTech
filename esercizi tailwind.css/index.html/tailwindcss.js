@@ -110,3 +110,18 @@ module.exports = {
         },
         plugins:[], 
     };
+
+    module.exports = {
+        darkMode:'media',
+        theme:{
+            extend:{
+                colors:{
+                    barnd:{
+                        light: '#ffff',
+                        dark: '#1e40af'
+                    },
+                },
+            },
+        },
+        Plugins:[]
+    }
