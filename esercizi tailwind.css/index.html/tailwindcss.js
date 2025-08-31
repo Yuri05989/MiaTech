@@ -95,4 +95,18 @@ module.exports = {
     }
     };
 
-    
+    module.exports= {
+        theme:{
+            extend:{
+                colors:{
+                    text:{
+                        heading:'#333333',  
+                        body:'#666666',
+                        link:'#1DA1F2',
+                        muted:'#999999',
+                    },
+                },
+            },
+        },
+        plugins:[], 
+    };
