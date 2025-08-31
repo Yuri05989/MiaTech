@@ -125,3 +125,11 @@ module.exports = {
         },
         Plugins:[]
     }
+
+    module.exports = {
+        darkMode: 'class',
+        theme:{
+            extend:{},
+        },
+        plugins:[]
+    };
