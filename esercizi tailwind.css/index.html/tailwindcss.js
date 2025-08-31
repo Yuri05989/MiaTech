@@ -93,43 +93,64 @@ module.exports = {
         },
         Plugins: []
     }
-    };
+};
 
-    module.exports= {
-        theme:{
-            extend:{
-                colors:{
-                    text:{
-                        heading:'#333333',  
-                        body:'#666666',
-                        link:'#1DA1F2',
-                        muted:'#999999',
-                    },
+module.exports = {
+    theme: {
+        extend: {
+            colors: {
+                text: {
+                    heading: '#333333',
+                    body: '#666666',
+                    link: '#1DA1F2',
+                    muted: '#999999',
                 },
             },
         },
-        plugins:[], 
-    };
+    },
+    plugins: [],
+};
 
-    module.exports = {
-        darkMode:'media',
-        theme:{
-            extend:{
-                colors:{
-                    barnd:{
-                        light: '#ffff',
-                        dark: '#1e40af'
-                    },
+module.exports = {
+    darkMode: 'media',
+    theme: {
+        extend: {
+            colors: {
+                barnd: {
+                    light: '#ffff',
+                    dark: '#1e40af'
                 },
             },
         },
-        Plugins:[]
+    },
+    Plugins: []
+}
+
+module.exports = {
+    darkMode: 'class',
+    theme: {
+        extend: {},
+    },
+    plugins: []
+};
+
+moodule.exports = {
+    darkMode: 'class',
+    theme: {
+        extend: {},
+    },
+    Plugins: [],
+};
+
+
+function toggleDarkMode() {
+    document.documentElement.classList.toggle('dark');
+    if (document.documentElement.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
     }
-
-    module.exports = {
-        darkMode: 'class',
-        theme:{
-            extend:{},
-        },
-        plugins:[]
-    };
+}
+if (localStorage.getItem('theme') === 'dark') {
+    document.documentElement.classList.add('dark');
+}
