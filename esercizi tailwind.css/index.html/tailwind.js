@@ -43,4 +43,28 @@ module.exports = {
     
     },
 plugins:[]
-}
+};
+
+module.exports = {
+    theme:{
+        extend:{
+            coolors:{
+                brand:{
+                    light:'#3AB0FF',
+                    DEFAULT:'#0071E3',
+                    dark:'#004A9F'
+                },
+                danger:{
+                    light:'#FF6B6B',
+                    DEFAULT:'#FF3B3B',
+                    dark:'#C70000'}
+            },
+            success:{
+                light:'#6BCB77',
+                DEFAULT:'#28A745',
+                dark:'#1E7E34'
+            },
+        },
+    },
+plugins:[]
+};
