@@ -24,3 +24,23 @@ module.exports = {
     },
     plugins: [],
 };
+module.exports = {
+    theme:{
+        extend:{
+            coolors:{
+                primary:'#1DA1F2',
+                secondary:'#14171A',
+                accent:'#657786',
+            },
+            spacing:{
+                '128': '32rem',
+                '144': '36rem', 
+            },
+            fontFamily:{
+                brand:['"coomic sans ms"', 'cursive'],
+            }
+        }
+    
+    },
+plugins:[]
+}
