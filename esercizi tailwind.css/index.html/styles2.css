@@ -17,3 +17,33 @@
     @apply p-4 rounded-md bg-yellow-100 text-yellow-800 border-l-4 border-yellow-500;
   }
 }
+
+
+/* 1. Layer base → stili generali */
+@layer base {
+  h1 {
+    @apply text-3xl font-bold text-gray-800;
+  }
+  p {
+    @apply text-gray-600;
+  }
+}
+
+/* 2. Layer components → componenti riutilizzabili */
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded font-semibold text-white bg-blue-600;
+  }
+  .card {
+    @apply p-6 rounded-lg shadow-md bg-white border border-gray-200;
+  }
+}
+
+/* 3. Layer utilities → nuove utility */
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(to right, #06b6d4, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
