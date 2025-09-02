@@ -470,6 +470,28 @@
 
 
 
+  <h1 class="text-2xl font-bold mb-6 text-center">Elementi Mostrati/Nascosti</h1>
+
+  <div class="space-y-4">
+
+    <!-- Visibile solo su mobile -->
+    <div class="bg-blue-500 text-white p-4 rounded-lg md:hidden">
+      Questo elemento è **visibile solo su mobile** (fino a md: <768px)
+    </div>
+
+    <!-- Visibile da md in su -->
+    <div class="bg-green-500 text-white p-4 rounded-lg hidden md:block">
+      Questo elemento è **visibile solo su tablet e desktop** (md: ≥768px)
+    </div>
+
+    <!-- Visibile solo su lg e superiori -->
+    <div class="bg-red-500 text-white p-4 rounded-lg hidden lg:block">
+      Questo elemento è **visibile solo su desktop grandi** (lg: ≥1024px)
+    </div>
+
+  </div>
+
+
 
 </body>
 
