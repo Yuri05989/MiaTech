@@ -420,6 +420,46 @@
   </div>
 
 
+
+
+
+  <header class="bg-blue-600 text-white p-4 rounded-lg mb-6">
+    <h1 class="text-2xl font-bold">Layout Responsivo con Tailwind</h1>
+  </header>
+
+
+  <main class="flex flex-col sm:flex-row gap-4">
+
+    <aside class="bg-green-500 text-white p-4 rounded-lg sm:w-1/3 md:w-1/4">
+      <h2 class="text-xl font-semibold">Sidebar</h2>
+      <p class="mt-2 text-sm">Visibile a lato su schermi medi e grandi.</p>
+    </aside>
+
+    
+    <section class="bg-white p-4 rounded-lg shadow-md flex-1">
+      <h2 class="text-xl font-semibold text-gray-800">Contenuto principale</h2>
+      <p class="mt-2 text-gray-600">
+        - Su <span class="font-bold">mobile (default)</span>: sidebar sopra, contenuto sotto. <br>
+        - Su <span class="font-bold">tablet (sm:)</span>: sidebar a sinistra e contenuto a destra. <br>
+        - Su <span class="font-bold">desktop (md:)</span>: sidebar più stretta. <br>
+      </p>
+    </section>
+
+  </main>
+
+ 
+  <footer class="bg-gray-800 text-white text-center p-4 mt-6 rounded-lg">
+    <p>© 2025 - Layout con Media Queries</p>
+  </footer>
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
