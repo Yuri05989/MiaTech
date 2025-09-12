@@ -1,0 +1,23 @@
+{
+  "name": "miatech",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Yuri05989/MiaTech#readme",
+  "bugs": {
+    "url": "https://github.com/Yuri05989/MiaTech/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yuri05989/MiaTech.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "vite": "^7.1.5"
+  }
+}
