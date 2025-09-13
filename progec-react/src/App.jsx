@@ -60,14 +60,19 @@ const Stat = () => {
     setCounter((prev) => prev - 1);
   };
 
+  const handleResetButton = () => {
+ setCounter ((prev) => prev = 0); 
+};
   return (
     <div>
       <button onClick={handleIncrement}> +1</button>
       <button onClick={handleDecrement}> -1</button>
+      <button onClick={handleResetButton}> 0</button>
       <p>Counter: {Counter}</p>
     </div>
   );
 };
+
 
 
 
