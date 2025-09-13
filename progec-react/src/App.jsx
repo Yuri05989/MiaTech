@@ -49,4 +49,26 @@ const Statess = () => {
 };
 
 
-export default Statess
+const Stat = () => {
+    const [Counter, setCounter] = useState(0);
+
+  const handleIncrement = () => {
+    setCounter((prev) => prev + 1);
+  };
+
+  const handleDecrement = () => {
+    setCounter((prev) => prev - 1);
+  };
+
+  return (
+    <div>
+      <button onClick={handleIncrement}> +1</button>
+      <button onClick={handleDecrement}> -1</button>
+      <p>Counter: {Counter}</p>
+    </div>
+  );
+};
+
+
+
+export default Stat
