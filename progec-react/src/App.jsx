@@ -32,4 +32,21 @@ const States = () =>{
     </div>
   )
 }
-export default States
+const Statess = () => {
+  const [Counter, setCounter] = useState(0);
+
+  const handleIncrement = () => {
+    setCounter((prev) => prev + 1);
+  };
+
+  return (
+    <div>
+      <button onClick={handleIncrement}>ADD</button>
+      <button onClick={handleIncrement}>+1</button>
+      <p>Counter: {Counter}</p>
+    </div>
+  );
+};
+
+
+export default Statess
