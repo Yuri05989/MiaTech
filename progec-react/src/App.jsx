@@ -3,6 +3,7 @@ import Hello from './components/Hello'
 import HelloFuncion from './components/HelloFuncion'
 import Counter from './components/counter'
 import TextInput from './components/TextInput'
+
 import './App.css'
 
 function App() {
@@ -54,21 +55,49 @@ useEffect(() => {
     </div>
   );
 };
-    function MioComponente() {
-      const [inputValue, setInputValue] = useState('');
 
-      return (
-        <div>
+function LoginForm(){
+    const[username, setUsername] = useState("")
+    const[password, setPassword] = useState("")
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("login", {username, password});
+    };
+    
+  return (
+    <form onSubmit={handleSubmit}>
+      <div>
+        <label>
+          Username
           <input
             type="text"
-            value={inputValue} // Lega il valore dell'input allo stato
-            onChange={(e) => setInputValue(e.target.value)} // Aggiorna lo stato al cambiamento
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            placeholder="Inserisci username"
+            required
           />
-          <p>Valore attuale: {inputValue}</p>
-        </div>
-      );
-    }
+        </label>
+      </div>
+
+      <div>
+        <label>
+          Password
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Inserisci password"
+            required
+          />
+        </label>
+      </div>
+
+      <button type="submit">Accedi</button>
+    </form>
+  );
+};
 
 
 
-export default App
+export default LoginForm
