@@ -2,6 +2,7 @@ import { useState, useEffect} from 'react'
 import Hello from './components/Hello'
 import HelloFuncion from './components/HelloFuncion'
 import Counter from './components/counter'
+import TextInput from './components/TextInput'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Hello/>
       <HelloFuncion/>
      <Counter/>
+     <TextInput/>
     </>
   )
 }
@@ -52,8 +54,21 @@ useEffect(() => {
     </div>
   );
 };
+    function MioComponente() {
+      const [inputValue, setInputValue] = useState('');
+
+      return (
+        <div>
+          <input
+            type="text"
+            value={inputValue} // Lega il valore dell'input allo stato
+            onChange={(e) => setInputValue(e.target.value)} // Aggiorna lo stato al cambiamento
+          />
+          <p>Valore attuale: {inputValue}</p>
+        </div>
+      );
+    }
 
 
 
-
-export default Stat
+export default App
