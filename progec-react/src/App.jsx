@@ -5,6 +5,7 @@ import Counter from './components/counter'
 import TextInput from './components/TextInput'
 
 import './App.css'
+import ItemList from './components/ItemList1'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -154,21 +155,13 @@ function InputConRef() {
   );
 }
 
- function List() {
-  const elementi = ["Mela", "Banana", "Arancia"];
+function ItemList1() {
+  const myItems = ["banana", "fragola", "uva"];
 
   return (
-    <div className="p-6">
-      <h2 className="text-xl font-bold mb-4">Lista della spesa</h2>
-      <ItemList items={elementi} />
-    </div>
-  );
-}
-
-function Card(props) {
-  return (
-    <div className="card">
-      {props.children}
+    <div>
+      <h1>La mia lista</h1>
+      <ItemList items={myItems} />
     </div>
   );
 }
@@ -191,4 +184,4 @@ function Cards() {
 }
 
 
-export default Cards
+export default ItemList1

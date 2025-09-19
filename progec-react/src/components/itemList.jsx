@@ -1,23 +1,13 @@
-import React from "react";
+import ItemList from './ItemList1'; // Assicurati che il percorso sia corretto
 
-export default function List() {
-  const elementi = ["Mela", "Banana", "Arancia"];
+function ItemList1() {
+  const myItems = ["banana", "fragola", "uva"];
 
   return (
-    <div className="p-6">
-      <h2 className="text-xl font-bold mb-4">Lista della spesa</h2>
-      <ItemList items={elementi} />
+    <div>
+      <h1>La mia lista</h1>
+      <ItemList items={myItems} />
     </div>
   );
 }
-
- function List() {
-  const elementi = ["Mela", "Banana", "Arancia"];
-
-  return (
-    <div className="p-6">
-      <h2 className="text-xl font-bold mb-4">Lista della spesa</h2>
-      <ItemList items={elementi} />
-    </div>
-  );
-}
+export default App;
