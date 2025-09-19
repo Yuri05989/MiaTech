@@ -154,7 +154,41 @@ function InputConRef() {
   );
 }
 
+ function List() {
+  const elementi = ["Mela", "Banana", "Arancia"];
+
+  return (
+    <div className="p-6">
+      <h2 className="text-xl font-bold mb-4">Lista della spesa</h2>
+      <ItemList items={elementi} />
+    </div>
+  );
+}
+
+function Card(props) {
+  return (
+    <div className="card">
+      {props.children}
+    </div>
+  );
+}
+
+function Cards() {
+  return (
+    <div>
+      <Card>
+        <h2>Titolo della Card</h2>
+        <p>Questo è il contenuto della card, passato tramite props.children.</p>
+        <button>Un pulsante</button>
+      </Card>
+
+      <Card>
+        <img src="immagine.jpg" alt="Un'immagine descrittiva" />
+        <p>Un'altra card con un'immagine.</p>
+      </Card>
+    </div>
+  );
+}
 
 
-
-export default InputConRef
+export default Cards
